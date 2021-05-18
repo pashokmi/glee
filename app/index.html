@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,73 +8,182 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
   <header class="header">
+
+    <div class="header__inner">
+      <a class="header__logo" href="#">
+        <img class="logo__img" src="images/logo.svg" alt="logo">
+      </a>
+      <nav class="menu">
+
+        <ul class="menu__list">
+
+          <li class="menu__item">
+            <a class="menu__link" href="#">Home +</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="#">About</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="#">Services</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="#">Pages +</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="#">News</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="#">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="nav">
+
+        <div class="nav__search">
+          <a class="nav__link" href="#">
+            <img class="nav__search-btn" src="images/icons/search.svg" alt="search">
+          </a>
+        </div>
+
+        <div class="nav__like-basket">
+          <a class="nav__link" href="#">
+            <img class="nav__heart" src="images/icons/heart.svg" alt="like">
+            <span class="nav__num">0</span>
+          </a>
+          <a class="nav__link" href="#">
+            <img class="nav__cart" src="images/icons/cart.svg" alt="cart">
+            <span class="nav__num">0</span>
+          </a>
+        </div>
+
+        <button class="nav__menu-btn" href="#">
+          <img class="nav__btn" src="images/icons/menu-btn.svg" alt="menu-button">
+        </button>
+      </div>
+
+    </div>
+    </div>
+  </header>
+
+
+
+
+
+
+
+  <footer class="footer">
     <div class="container">
-      <div class="header__inner">
-        <a class="logo" href="#">
-          <img class="logo__img" src="images/logo.svg" alt="logo">
-        </a>
-        <nav class="menu">
 
-          <ul class="menu__list">
-            
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Home +</a>
-            </li>
+        <div class="footer__items">
 
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">About</a>
-            </li>
-
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Services</a>
-            </li>
-
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Pages +</a>
-            </li>
-
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">News</a>
-            </li>
-            
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Contact</a>
-            </li>
-            
-          </ul>
-        </nav>
-
-        <div class="user-nav">
-
-          <div class="user-nav__search">
-          <a class="user-nav__link" href="#">
-            <img class="user-nav__search-btn" src="images/icons/search.svg" alt="search">
-          </a>
+          <div class="footer__item">
+            <a class="footer__logo" href="#">
+              <img class="logo__img" src="images/logo.svg" alt="logo">
+            </a>
+            <addres sclass="footer__address"><span>address:</span>4772 Wines Lane Houston, TX 77032</addres>
+            <a class="footer__phone" href="tel:+8323475843"><span>Telephone:</span>+832-347-5843</a>
+            <a class="footer__email" href="mailto:contact@Glee.com"><span>Email:</span>contact@Glee.com</a>
           </div>
 
-          <div class="user-nav__like-basket">
-          <a class="user-nav__link" href="#">
-            <img class="user-nav__heart" src="images/icons/heart.svg" alt="like">
-            <span class="user-nav__num">0</span>
-          </a>
-          <a class="user-nav__link" href="#">
-            <img class="user-nav__cart" src="images/icons/cart.svg" alt="cart">
-            <span class="user-nav__num">0</span>
-          </a>
+          <div class="footer__item">
+            <div class="footer__title">services</div>
+            <ul class="footer__categoty">
+              <li class="footer__list">
+                <a class="footer__link" href="#">About us</a></li>
+              <li class="footer__list">
+                <a class="footer__link" href="#">Return Policy</a></li>
+              <li class="footer__list">
+                <a class="footer__link" href="#">Our Blog</a></li>
+              <li class="footer__list">
+                <a class="footer__link" href="#">Contact Us</a></li>
+              <li class="footer__list">
+                <a class="footer__link" href="#">Terms & Condition</a></li>
+            </ul>
           </div>
-          <div class="user-nav__menu-btn">
-          <a class="user-nav__link" href="#">
-            <img class="user-nav__btn" src="images/icons/menu-btn.svg" alt="menu-button">
-          </a>
+          <div class="footer__item">
+            <div class="footer__title">account</div>
+            <ul class="footer__categoty">
+              <li class="footer__list">
+                <a class="footer__link" href="#">Your Account</a></li>
+              <li class="footer__list">
+                <a class="footer__link" href="#">Checkout</a></li>
+              <li class="footer__list">
+                <a class="footer__link" href="#">Login</a></li>
+              <li class="footer__list">
+                <a class="footer__link" href="#">Register</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <div class="footer__title">newsletter</div>
+            <ul class="footer__categoty">
+              <li class="footer__list"> Subscribe by our newsletter and get update protidin.</li>
+            </ul>
+            <form class="footer__form" action="#">
+              <input class="footer__form-input" type="text" placeholder="Email address" required>
+
+              <button class="footer__form-btn" type="submit">Subscribe</button>
+            </form>
           </div>
 
         </div>
 
+      
+
+      <div class="footer-boottom">
+        <div class="footer-bottom__copy">©2020 CopyRight Example. All rights reserved. </div>
+        <div class="footer-bottom__menu">
+          <ul class="footer-bottom__menu-inner">
+
+            <li class="footer-bottom__menu-list">
+              <a class="footer-bottom__menu-link" href="#">
+                Home
+              </a>
+            </li>
+            <li class="footer-bottom__menu-list">
+              <a class="footer-bottom__menu-link" href="#">
+                About
+              </a>
+            </li>
+            <li class="footer-bottom__menu-list">
+              <a class="footer-bottom__menu-link" href="#">
+                Blog
+              </a>
+            </li>
+            <li class="footer-bottom__menu-list">
+              <a class="footer-bottom__menu-link" href="#">
+                Contact
+              </a>
+            </li>
+
+          </ul>
+        </div>
       </div>
     </div>
-  </header>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/main.min.js"></script>
+
 
 </body>
+
 </html>

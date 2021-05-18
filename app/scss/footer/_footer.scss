@@ -1,0 +1,88 @@
+.footer {
+  padding-top: 80px;
+  margin-bottom: 40px;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dae4e9;
+    padding-bottom: 55px;
+  }
+  &__logo{
+    margin-bottom: 20px;
+  }
+  &__address {
+    line-height: 24px;
+  }
+
+  span {
+    text-transform: uppercase;
+  }
+
+  &__phone,
+  &__email {
+    font-size: 14px;
+    line-height: 32px;
+    color: $footer;
+  }
+
+
+  &__item {
+    max-width: 200px;
+    width: 100%;
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 32px;
+    color: $footer;
+    margin-right: 100px;
+  }
+
+  &__item:last-child {
+    max-width: 270px;
+    margin-right: 0;
+  }
+
+  &__title {
+    @extend %dmsans-700;
+    font-size: 16px;
+    line-height: 21px;
+    color: $footer-title;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    padding-top: 15px;
+  }
+
+  &__categoty {
+    padding: 0;
+    color: $footer;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__link {
+    color: $footer;
+  }
+
+  &__form {
+    @extend %dmsans-400;
+  }
+
+  &__form-input {
+    width: 170px;
+    padding: 10px 12px;
+    border: none;
+    background-color: #000;
+    // background-color: #fef7f0;
+
+  }
+
+  &__form-btn {
+    border: none;
+    width: 100px;
+
+    background-color: $accent;
+    color: #fff;
+  }
+}

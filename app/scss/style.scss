@@ -4,99 +4,10 @@
 @import 'global';
 
 
-.header {
-  padding: 45px 0;
-
-  &__inner {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-}
-
-.logo {
-  margin-right: 485px;
-}
-
-.menu {
-  margin-right: 325px;
-  &__list {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    
-  }
-
-  &__list-item+.menu__list-item {
-    padding-left: 35px;
-    list-style: none
-  }
-
-  &__list-link {
-    @extend %rubik-500;
-    color: #436372;
-    font-size: 15px;
+@import 'header/_header.scss';
+@import 'footer/_footer.scss';
 
 
-  }
-
-
-
-}
-
-.user-nav {
-  display: flex;
-
-  &__link {
-    position: relative;
-  }
-
-  &__link+.user-nav__link {
-    padding-left: 25px;
-  }
-
-  &__search {
-    margin-right: 20px;
-  }
-
-  &__search-btn {
-    margin: 0 auto;
-    padding: 17px;
-    border-radius: 50%;
-    background-color: #edf1f4;
-    
-  }
-
-  &__like-basket {
-    display: flex;
-    justify-content: space-around;
-    width: 180px;
-    height: 50px;
-    background-color: #FCD7B6;
-    border-radius: 25px;
-    padding: 20px 30px 13px;
-    margin-right: 20px;
-  }
-  &__menu-btn{
-    background-color: #a3bbc8;
-    padding: 15px;
-    border-radius: 50%;
-  }
-  &__num {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: #fff;
-    top: -9px;
-    right: -14px;
-    font-size: 10px;
-    color: #3d525e;
-    text-align: center;
-    line-height: 16px;
-    @extend %dmsans-400;
-  }
-}
 
 
 
