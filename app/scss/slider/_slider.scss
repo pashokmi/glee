@@ -1,0 +1,110 @@
+.slider {
+  background-color: #fcd7b6;
+  @extend %rubik-500;
+
+
+  &__inner {
+    color: #243f4d;
+    padding-top: 220px;
+    position: relative;
+  }
+
+  &__inner::before {
+    content: "";
+    border-radius: 50%;
+    background-image: linear-gradient(to left, #fff 0%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    width: 634px;
+    height: 634px;
+    right: -113px;
+    top: 50%;
+    transform: translateY(-50%);
+
+  }
+
+  &__item {}
+
+  &__item-block {
+    display: flex;
+
+  }
+
+
+
+  &__content {
+    margin-right: 110px;
+  }
+
+  &__title {
+    max-width: 420px;
+    width: 100%;
+    font-size: 72px;
+    text-transform: uppercase;
+    line-height: 70px;
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    @extend %rubik-400;
+    max-width: 370px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 50px;
+  }
+
+  &__link {
+    @extend %btn;
+    padding: 20px 108px 23px 25px;
+    position: relative;
+  }
+  &__link::before{
+    content: "";
+    background-image: url('../../images/arrows.svg');
+    position: absolute;
+    top: 25px;
+    left: 160px;
+    height: 100%;
+    width: 100%;
+    
+    background-repeat: no-repeat;
+  }
+  &__img {
+    padding-top: 60px;
+    margin-bottom: 200px;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+
+    li {
+      margin: 0 5px 45px 0;
+
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        border: none;
+        border-radius: 50%;
+        font-weight: 500;
+        font-size: 12px;
+        margin-right: 10px;
+        background-color: #fde3cc;
+      }
+
+      &.slick-active {
+        button {
+          background-color: #fff;
+          color: #243f4d;
+        }
+      }
+    }
+  }
+
+
+
+
+}

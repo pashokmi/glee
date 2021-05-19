@@ -28,3 +28,9 @@ $footer-title: #1f2044;
   font-family: 'DM Sans', sans-serif;
   font-weight: 700;
 }
+
+%btn{
+  background-color: $accent;
+  color: #fff;
+  cursor: pointer;
+}

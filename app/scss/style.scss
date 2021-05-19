@@ -1,12 +1,13 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 
 @import 'header/_header.scss';
 @import 'footer/_footer.scss';
-
+@import 'slider/_slider.scss';
 
 
 
