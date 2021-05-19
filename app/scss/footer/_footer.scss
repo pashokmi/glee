@@ -8,11 +8,38 @@
     border-bottom: 1px solid #dae4e9;
     padding-bottom: 55px;
   }
-  &__logo{
-    margin-bottom: 20px;
-  }
-  &__address {
+
+  &__item {
+    max-width: 200px;
+    width: 100%;
+    @extend %rubik-400;
+    font-size: 14px;
     line-height: 24px;
+    color: $footer;
+  }
+
+  &__item:nth-child(2) {
+    margin-right: 10px;
+  }
+
+  &__item:nth-child(3) {
+    margin-right: -4px;
+  }
+
+  &__item:last-child {
+    max-width: 280px;
+    margin-right: -8px;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 22px;
+  }
+
+  address {
+    line-height: 24px;
+    margin-bottom: 10px;
+    display: inline-block;
   }
 
   span {
@@ -26,21 +53,6 @@
     color: $footer;
   }
 
-
-  &__item {
-    max-width: 200px;
-    width: 100%;
-    @extend %rubik-400;
-    font-size: 14px;
-    line-height: 32px;
-    color: $footer;
-    margin-right: 100px;
-  }
-
-  &__item:last-child {
-    max-width: 270px;
-    margin-right: 0;
-  }
 
   &__title {
     @extend %dmsans-700;
@@ -59,30 +71,86 @@
 
   &__list {
     list-style: none;
+    margin-bottom: 10px;
   }
 
   &__link {
     color: $footer;
   }
 
+  &__list-item {
+    margin-bottom: 37px;
+  }
+
   &__form {
+    width: 100%;
     @extend %dmsans-400;
+    padding: 0;
+    margin: 0;
   }
 
   &__form-input {
-    width: 170px;
-    padding: 10px 12px;
+    width: 165px;
+    padding: 3px 15px;
     border: none;
-    background-color: #000;
-    // background-color: #fef7f0;
+    background-color: #fef7f0;
+  }
 
+  &__form-input::placeholder {
+    @extend %dmsans-400;
+    font-size: 12px;
   }
 
   &__form-btn {
     border: none;
     width: 100px;
-
     background-color: $accent;
     color: #fff;
+    line-height: 21px;
+    padding: 9px 5px;
+    cursor: pointer;
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: space-between;
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 32px;
+    color: $footer;
+    padding-top: 27px;
+  }
+
+  &__menu-inner {
+    display: flex;
+    padding: 0;
+  }
+
+  &__menu-list {
+    list-style: none;
+    padding: 0 15px;
+    position: relative;
+  }
+
+  &__menu-list::before {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 1px;
+    left: 0;
+    top: 10px;
+    background-color: $footer;
+  }
+
+  &__menu-list:first-child::before {
+    width: 0;
+  }
+
+  &__menu-list:first-child {
+    padding-left: 0;
+  }
+
+  &__menu-list:last-child {
+    padding-right: 0;
   }
 }
