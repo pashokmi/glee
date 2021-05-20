@@ -2,7 +2,6 @@
   background-color: #fcd7b6;
   @extend %rubik-500;
 
-
   &__inner {
     color: #243f4d;
     padding-top: 220px;
@@ -19,17 +18,11 @@
     right: -113px;
     top: 50%;
     transform: translateY(-50%);
-
   }
-
-  &__item {}
 
   &__item-block {
     display: flex;
-
   }
-
-
 
   &__content {
     margin-right: 110px;
@@ -57,7 +50,8 @@
     padding: 20px 108px 23px 25px;
     position: relative;
   }
-  &__link::before{
+
+  &__link::before {
     content: "";
     background-image: url('../../images/arrows.svg');
     position: absolute;
@@ -65,9 +59,9 @@
     left: 160px;
     height: 100%;
     width: 100%;
-    
     background-repeat: no-repeat;
   }
+
   &__img {
     padding-top: 60px;
     margin-bottom: 200px;
@@ -103,8 +97,5 @@
       }
     }
   }
-
-
-
 
 }

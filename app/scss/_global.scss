@@ -16,9 +16,11 @@ body {
 
 .container {
   max-width: 1200px;
-  
   margin: 0 auto;
   padding: 0 15px;
+}
+.container__big{
+  max-width: 1800px;
 }
 a{
   font-size: 14px;

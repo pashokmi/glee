@@ -1,0 +1,59 @@
+.info {
+  background-color: #fef7f0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    padding: 38px 0 40px;
+  }
+
+  &__item {
+    padding-left: 80px;
+    position: relative;
+    
+  }
+
+  &__item:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    top: -32px;
+    right: -130px;
+    height: 170px;
+    width: 1px;
+    border-right: 1px solid #e8e4df;
+  }
+
+  &__item--supp {
+    background-image: url('../../images/info/time.svg');
+    background-repeat: no-repeat;
+    background-position: 0px 10px
+  }
+
+  &__item--delivery {
+    background-image: url('../../images/info/delivery.svg');
+    background-repeat: no-repeat;
+    background-position: 0px 10px;
+  }
+
+  &__item--pay {
+    background-image: url('../../images/info/pay.svg');
+    background-repeat: no-repeat;
+    background-position: 0px 10px
+  }
+
+  &__title {
+    @extend %dmsans-700;
+    font-size: 18px;
+    line-height: 40px;
+    color: #414141;
+  }
+
+  &__text {
+    @extend %dmsans-400;
+    font-size: 16px;
+    line-height: 30px;
+    max-width: 215px;
+    color: #585858;
+  }
+
+}
