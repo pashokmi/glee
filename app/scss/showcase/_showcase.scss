@@ -1,0 +1,102 @@
+.showcase {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+  }
+
+  &__filters {
+    margin-bottom: 80px;
+    @extend %dmsans-700;
+
+    .mixitup-control-active {
+      color: #191919;
+      
+    }
+  }
+
+  &__btn {
+    border: none;
+    background-color: inherit;
+    color: #8b8b8b;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+  &__btn:last-child{
+    margin-right: 0;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f9f9f9;
+  }
+
+  &__item {
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px;
+    margin: 0 11px 40px;
+    // margin: 0 15px 40px;
+    padding: 0 15px 25px;
+    position: relative;
+    background-color: #fff;
+    min-width: 270px;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    margin: auto;
+  }
+
+  &__card-title {
+    @extend %dmsans-500;
+    font-size: 16px;
+    color: #243f4d;
+    
+  }
+
+  &__price {
+    @extend %dmsans-700;
+    color: $accent;
+
+  }
+
+  &__nav {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: all 0.8s;
+    opacity: 0;
+  }
+  &__nav:hover{
+    opacity: 1;
+  }
+
+  &__nav-item {
+    background-color: #fff;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    line-height: 55px;
+    margin: 0 8px;
+  }
+  &__nav-item:hover {
+    background-color: $accent;
+  }
+  &__nav-item:hover path{
+    background-color: $accent;
+    fill: #fff;
+  }
+
+  
+
+
+}
+

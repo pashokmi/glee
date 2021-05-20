@@ -5,4 +5,6 @@ $(function () {
     arrows: false,
     fade:true
   })
+
+  var mixer = mixitup('.showcase__content');
 })
