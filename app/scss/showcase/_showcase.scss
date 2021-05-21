@@ -11,8 +11,7 @@
     @extend %dmsans-700;
 
     .mixitup-control-active {
-      color: #191919;
-      
+      color: #191919;  
     }
   }
 
@@ -23,6 +22,7 @@
     cursor: pointer;
     margin-right: 15px;
   }
+
   &__btn:last-child{
     margin-right: 0;
   }
@@ -46,6 +46,7 @@
     min-height: 380px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
   }
 
   &__img {
@@ -56,27 +57,21 @@
     @extend %dmsans-500;
     font-size: 16px;
     color: #243f4d;
-    
   }
 
   &__price {
     @extend %dmsans-700;
     color: $accent;
-
   }
 
   &__nav {
     display: flex;
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: 42%;
+    top: 54%;
     transform: translate(-50%, -50%);
     cursor: pointer;
     transition: all 0.8s;
-    opacity: 0;
-  }
-  &__nav:hover{
-    opacity: 1;
   }
 
   &__nav-item {
@@ -86,17 +81,21 @@
     border-radius: 50%;
     line-height: 55px;
     margin: 0 8px;
+    transform: translateY(-3000%);
   }
+
   &__nav-item:hover {
     background-color: $accent;
   }
+
   &__nav-item:hover path{
     background-color: $accent;
     fill: #fff;
   }
-
-  
-
-
 }
 
+ .showcase__item:hover {
+   .showcase__nav-item {
+     transform: translateY(0);
+   }
+ }
