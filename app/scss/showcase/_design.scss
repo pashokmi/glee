@@ -1,0 +1,76 @@
+.design {
+
+  &__filters {
+    margin-bottom: 75px;
+    @extend %dmsans-700;
+
+    .mixitup-control-active {
+      color: #191919;
+    }
+  }
+
+  &__btn {
+    border: none;
+    background-color: inherit;
+    color: #8b8b8b;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+
+  &__btn:last-child {
+    margin-right: 0;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__content {
+    margin-bottom: 115px;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  &__card {
+    position: relative;
+    margin: 0 30px 30px 0;
+  }
+
+  &__card:nth-child(3) {
+    margin-right: 0;
+  }
+
+  &__card:nth-child(6) {
+    margin-right: 0;
+  }
+
+
+
+
+  &__card-text {
+    position: absolute;
+    top: 40px;
+    left: 35px;
+    max-width: 175px;
+    @extend %dmsans-700;
+
+  }
+
+
+  &__title {
+    font-size: 20px;
+    color: $title;
+  }
+
+  &__style {
+    color: $accent;
+    font-size: 16px;
+
+  }
+
+
+}
+
