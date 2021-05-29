@@ -1,0 +1,19 @@
+.partners {
+  background-color: #fef7f0;
+  margin: -172px 0 88px;
+  padding-top: 265px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &__img{
+    img{
+      background-size: cover;
+      padding: 0 45px;
+    }
+  }
+
+}

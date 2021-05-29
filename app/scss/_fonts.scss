@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: 'DMSans';
-  font-style: normal;
+  font-style: medium;
   src: 
     url('../fonts/DMSans-Medium.woff2') format('woff2'),
     url('../fonts/DMSans-Medium.woff') format('woff');
@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: 'DMSans';
-  font-style: normal;
+  font-style: bold;
   src:
     url('../fonts/DMSans-Bold.woff2') format('woff2'),
     url('../fonts/DMSans-Bold.woff') format('woff');
@@ -36,10 +36,18 @@
 
 @font-face {
   font-family: 'Rubik';
-  font-style: normal;
+  font-style: medium;
   src:
     url('../fonts/Rubik-Medium.woff2') format('woff2'),
     url('../fonts/Rubik-Medium.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: bold;
+  src:
+    url('../fonts/Poppins-Bold.woff2') format('woff2'),
+    url('../fonts/Poppins-Bold.woff') format('woff');
   font-display: swap;
 }
 

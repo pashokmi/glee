@@ -6,11 +6,13 @@
 
 
 @import 'header/_header.scss';
-@import 'slider/_slider.scss';
-@import 'slider/_info.scss';
-@import 'showcase/_showcase.scss';
-@import 'showcase/_lamp.scss';
-@import 'showcase/_design.scss';
+@import 'home/slider/_slider.scss';
+@import 'home/slider/_info.scss';
+@import 'home/showcase/_showcase.scss';
+@import 'home/showcase/_lamp.scss';
+@import 'home/showcase/_design.scss';
+@import 'home/news/_news.scss';
+@import 'home/news/_partners.scss';
 @import 'footer/_footer.scss';
 
 
