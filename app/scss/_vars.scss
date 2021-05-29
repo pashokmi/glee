@@ -41,8 +41,9 @@ $footer-title: #1f2044;
 }
 
 @function max($numbers...) {
-@return m#{a}x(#{$number});
+@return m#{a}x(#{$numbers});
 }
+
 @function max($numbers...) {
-@return m#{i}n(#{$number});
+@return m#{i}n(#{$numbers});
 }

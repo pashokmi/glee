@@ -1,6 +1,5 @@
 .header {
-  padding: 45px 0;
-  max-width: 1770px;
+  padding: 50px 0;
   width: 100%;
   margin: 0 auto;
 
@@ -9,24 +8,29 @@
     justify-content: space-between;
     align-items: center;
   }
-  &__logo {
-    margin-right: 160px;
-  }
 }
 
+.logo {
+  margin-right: 160px;
+}
 
 .menu {
-  
+  display: flex;
+  align-items: center;
+
 
   &__list {
     display: flex;
-    list-style: none;
-    padding: 0;
+    margin-right: 330px;
+  }
+
+  &__list:first-child {
+    padding-left: 0;
   }
 
   &__item {
     margin-right: 35px;
-    list-style: none
+
   }
 
   &__item:last-child {
@@ -34,22 +38,27 @@
   }
 
   &__link {
-    @extend %rubik-500;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
     color: #436372;
     font-size: 15px;
+
   }
 }
 
-.nav {
+.menu-adds {
   display: flex;
   padding-top: 4px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-right: -5px;
 
-  &__link {
+
+  &__link-item {
     position: relative;
-  }
-
-  &__link+.user-nav__link {
-    padding-left: 25px;
+    display: block;
+    border: none;
   }
 
   &__search {
@@ -62,12 +71,8 @@
     margin-right: 20px;
   }
 
-  &__search-btn {
-    margin: 0 auto;
-    padding-top: 18px;
-  }
 
-  &__like-basket {
+  &__link {
     display: flex;
     justify-content: space-around;
     width: 180px;
@@ -75,10 +80,11 @@
     background-color: #fcd7b6;
     border-radius: 25px;
     padding: 22px 11px 10px;
-    margin-right: 20px;
+    margin-right: 17px;
     position: relative;
   }
-  &__like-basket::before{
+
+  &__link::before {
     content: '';
     width: 1px;
     height: 32px;
@@ -88,17 +94,22 @@
     background-color: #fde7d3;
   }
 
-  &__menu-btn {
+  &__btn {
     background-color: #a3bbc8;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
     border: none;
+    border-radius: 50%;
     cursor: pointer;
   }
 
-  &__btn {
-    margin: 0 auto;
+  &__svg {
+    width: 20px;
+    height: 20px;
+    fill: #26404e;
   }
 
   &__num {
@@ -113,6 +124,18 @@
     color: #3d525e;
     text-align: center;
     line-height: 16px;
-    @extend %dmsans-400;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
   }
+}
+
+#search {
+  height: 15px;
+  position: absolute;
+  top: 75px;
+  right: 345px;
+}
+
+#menu-btn {
+  fill: #fff;
 }

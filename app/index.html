@@ -5,499 +5,648 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Glee</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
   <header class="header">
+    <div class="container__wrapper">
 
-    <div class="header__inner">
-      <a class="header__logo" href="#">
-        <img class="logo__img" src="images/logo.svg" alt="logo">
-      </a>
-      <nav class="menu">
+      <div class="header__inner">
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.png" alt="logo">
+        </a>
+        <nav class="menu">
 
-        <ul class="menu__list">
+          <ul class="menu__list">
 
-          <li class="menu__item">
-            <a class="menu__link" href="#">Home +</a>
-          </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Home +</a>
+            </li>
 
-          <li class="menu__item">
-            <a class="menu__link" href="#">About</a>
-          </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">About</a>
+            </li>
 
-          <li class="menu__item">
-            <a class="menu__link" href="#">Services</a>
-          </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Services</a>
+            </li>
 
-          <li class="menu__item">
-            <a class="menu__link" href="#">Pages +</a>
-          </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Pages +</a>
+            </li>
 
-          <li class="menu__item">
-            <a class="menu__link" href="#">News</a>
-          </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">News</a>
+            </li>
 
-          <li class="menu__item">
-            <a class="menu__link" href="#">Contact</a>
-          </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Contact</a>
+            </li>
 
-        </ul>
-      </nav>
+          </ul>
 
-      <div class="nav">
 
-        <div class="nav__search">
-          <a class="nav__link" href="#">
-            <img class="nav__search-btn" src="images/icons/search.svg" alt="search">
-          </a>
-        </div>
+          <div class="menu-adds">
 
-        <div class="nav__like-basket">
-          <a class="nav__link" href="#">
-            <img class="nav__heart" src="images/icons/heart.svg" alt="like">
-            <span class="nav__num">0</span>
-          </a>
-          <a class="nav__link" href="#">
-            <img class="nav__cart" src="images/icons/cart.svg" alt="cart">
-            <span class="nav__num">0</span>
-          </a>
-        </div>
 
-        <button class="nav__menu-btn" href="#">
-          <img class="nav__btn" src="images/icons/menu-btn.svg" alt="menu-button">
-        </button>
+            <button class="menu-adds__search">
+              <svg class="menu-adds__svg" id="search">
+                <use xlink:href="sprite.svg#search"></use>
+              </svg>
+            </button>
+
+            <div class="menu-adds__link">
+              <a class="menu-adds__link-item" href="#">
+                <svg class="menu-adds__svg">
+                  <use xlink:href="sprite.svg#like"></use>
+                </svg>
+                <span class="menu-adds__num">0</span>
+              </a>
+
+              <a class="menu-adds__link-item" href="#">
+                <svg class="menu-adds__svg">
+                  <use xlink:href="sprite.svg#cart"></use>
+                </svg>
+                <span class="menu-adds__num">0</span>
+              </a>
+            </div>
+
+            <button class="menu-adds__btn">
+              <svg class="menu-adds__svg" id="menu-btn">
+                <use xlink:href="sprite.svg#menu-btn"></use>
+              </svg>
+            </button>
+
+          </div>
+        </nav>
+
       </div>
-
     </div>
-
   </header>
 
   <main class="main">
 
     <section class="slider">
       <!-- slider -->
-      <div class="container">
+      <div class="container__wrapper">
+        <h1 class="sr-only">furniture</h1>
 
-        <div class="slider__inner">
+        <div class="slider__wrapper">
+          <div class="slider__inner">
 
-          <div class="slider__item">
-            <div class="slider__item-block">
-              <div class="slider__content">
-                <h1 class="slider__title">smart and trendy</h1>
-                <p class="slider__text">
-                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                </p>
-                <a class="slider__link" href="#">Shop Now</a>
+            <div class="slider__item">
+
+              <div class="slider__item-block">
+                <div class="slider__content">
+                  <h2 class="slider__title">smart and trendy</h2>
+                  <p class="slider__text">
+                    Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                  </p>
+                  <a class="slider__link" href="#">Shop Now</a>
+                </div>
+                <div class="slider__img">
+                  <img src="images/slider/slider-img.png" alt="sofa">
+                </div>
               </div>
-              <img class="slider__img" src="images/slider/slider-img.png" alt="slider images">
             </div>
-          </div>
 
-          <div class="slider__item">
-            <div class="slider__item-block">
-              <div class="slider__content">
-                <h1 class="slider__title">smart and trendy</h1>
-                <p class="slider__text">
-                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                </p>
-                <a class="slider__link" href="#">Shop Now</a>
+            <div class="slider__item">
+              <div class="slider__item-block">
+                <div class="slider__content">
+                  <h2 class="slider__title">smart and trendy</h2>
+                  <p class="slider__text">
+                    Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                  </p>
+                  <a class="slider__link" href="#">Shop Now</a>
+                </div>
+                <div class="slider__img">
+                  <img src="images/slider/slider-img.png" alt="sofa">
+                </div>
               </div>
-              <img class="slider__img" src="images/slider/slider-img.png" alt="slider images">
             </div>
-          </div>
 
-          <div class="slider__item">
-            <div class="slider__item-block">
-              <div class="slider__content">
-                <h1 class="slider__title">smart and trendy</h1>
-                <p class="slider__text">
-                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                </p>
-                <a class="slider__link" href="#">Shop Now</a>
+            <div class="slider__item">
+              <div class="slider__item-block">
+                <div class="slider__content">
+                  <h2 class="slider__title">smart and trendy</h2>
+                  <p class="slider__text">
+                    Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                  </p>
+                  <a class="slider__link" href="#">Shop Now</a>
+                </div>
+                <div class="slider__img">
+                  <img src="images/slider/slider-img.png" alt="sofa">
+                </div>
               </div>
-              <img class="slider__img" src="images/slider/slider-img.png" alt="slider images">
             </div>
+
           </div>
 
         </div>
+
+
+        <div class="slider-info">
+          <!-- info -->
+
+          <div class="slider-info__inner">
+
+            <div class="slider-info__items">
+              <div class="slider-info__item slider-info__item--supp">
+                <p class="slider-info__title">Support 24/7.</p>
+                <p class="slider-info__text">Contact us 24 hours a day,
+                  7 days a week.</p>
+              </div>
+            </div>
+
+            <div class="slider-info__items">
+              <div class="slider-info__item slider-info__item--delivery">
+                <p class="slider-info__title">Delivery.</p>
+                <p class="slider-info__text">Free shipping on all US order.</p>
+              </div>
+            </div>
+
+            <div class="slider-info__items">
+              <div class="slider-info__item slider-info__item--pay">
+                <p class="slider-info__title">100% Payment secure.</p>
+                <p class="slider-info__text">We ensure secure payment
+                  with PEV.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div> <!-- info close -->
+
       </div>
     </section> <!-- slider close -->
-
-    <div class="info">
-      <!-- info -->
-      <div class="container container__big">
-        <div class="info__inner">
-
-          <div class="info__item info__item--supp">
-            <p class="info__title">Support 24/7.</p>
-            <p class="info__text">Contact us 24 hours a day,
-              7 days a week.</p>
-          </div>
-
-          <div class="info__item info__item--delivery">
-            <p class="info__title">Delivery.</p>
-            <p class="info__text">Free shipping on all US order.</p>
-          </div>
-
-          <div class="info__item info__item--pay">
-            <p class="info__title">100% Payment secure.</p>
-            <p class="info__text">We ensure secure payment
-              with PEV.</p>
-          </div>
-
-        </div>
-      </div>
-    </div> <!-- info close -->
     <section class="showcase">
       <!-- showcase -->
-      <div class="container">
+      <div class="container" data-ref="container-1">
 
         <div class="showcase__inner">
-          <h2 class="title">
+          <h2 class="title products__title">
             Products of the week
           </h2>
           <div class="showcase__filters">
-            <button class="showcase__btn" data-filter="all">All</button>
-            <button class="showcase__btn" data-filter=".category-furnitures">Furnitures</button>
-            <button class="showcase__btn" data-filter=".category-chairs">Chairs</button>
-            <button class="showcase__btn" data-filter=".category-lighting">Lighting</button>
-            <button class="showcase__btn" data-filter=".category-decor">Decor</button>
+            <button class="showcase__filter" data-filter="all">All</button>
+            <button class="showcase__filter" data-filter=".category-furnitures">Furnitures</button>
+            <button class="showcase__filter" data-filter=".category-chairs">Chairs</button>
+            <button class="showcase__filter" data-filter=".category-lighting">Lighting</button>
+            <button class="showcase__filter" data-filter=".category-decor">Decor</button>
           </div>
         </div>
 
         <div class="showcase__content">
 
-          <div class="showcase__item mix category-furnitures">
-            <img class="showcase__img" src="images/showcase/1.jpg" alt="">
-            <h3 class="showcase__card-title">Wooden radio</h3>
+          <article class="showcase__article mix category-furnitures">
+
+            <div class="showcase__img">
+              <img src="images/showcase/1.jpg" alt="Wooden radio">
+            </div>
+
+            <h3 class="showcase__title">Wooden radio</h3>
+            <span class="showcase__price"><span>$</span>29.00</span>
+
+
+            <ul class="showcase__nav">
+
+              <li class="showcase__item">
+                <a class="showcase__link" href="#">
+                  <svg class="showcase__svg">
+                    <use xlink:href="sprite.svg#showcase-search"></use>
+                  </svg></a>
+              </li>
+
+              <button class="showcase__item">
+                <a class="showcase__link">
+                  <svg class="showcase__svg">
+                    <use xlink:href="sprite.svg#showcase-cart"></use>
+                  </svg></a>
+              </button>
+
+              <button class="showcase__item">
+                <a class="showcase__link">
+                  <svg class="showcase__svg">
+                    <use xlink:href="sprite.svg#showcase-like"></use>
+                  </svg></a>
+              </button>
+
+            </ul>
+          </article>
+
+          <article class="showcase__article mix category-furnitures">
+
+            <div class="showcase__img">
+              <img src="images/showcase/2.jpg" alt="Wooden radio">
+            </div>
+
+
+            <h3 class="showcase__title">Wooden chair</h3>
             <span class="showcase__price"><span>$</span>29.00</span>
             <ul class="showcase__nav">
-              <li class="showcase__nav-item">
-                <a class="showcase__link" href="#"><svg width="20px" height="20px">
-                    <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
-                      d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
-                  </svg></a>
-              </li>
-              <li class="showcase__nav-item">
-                <a class="showcase__link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="20px">
-                    <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
-                      d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
-                  </svg></a>
-              </li>
-              <li class="showcase__nav-item">
-                <a class="showcase__link" href="#"><svg width="22px" height="18px">
-                    <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
-                      d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
-                  </svg></a>
-              </li>
-            </ul>
-          </div>
 
-          <div class="showcase__item mix category-furnitures">
-            <img class="showcase__img" src="images/showcase/2.jpg" alt="">
-            <h3 class="showcase__card-title">Wooden chair</h3>
-            <span class="showcase__price">$29.00</span>
-            <ul class="showcase__nav">
-              <li class="showcase__nav-item">
-                <a class="showcase__link" href="#"><svg width="20px" height="20px">
-                    <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
-                      d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
+              <li class="showcase__item">
+                <a class="showcase__link" href="#">
+                  <svg class="showcase__svg">
+                    <use xlink:href="sprite.svg#showcase-search"></use>
                   </svg></a>
               </li>
-              <li class="showcase__nav-item">
-                <a class="showcase__link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="20px">
-                    <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
-                      d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
-                  </svg></a>
-              </li>
-              <li class="showcase__nav-item">
-                <a class="showcase__link" href="#"><svg width="22px" height="18px">
-                    <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
-                      d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
-                  </svg></a>
-              </li>
-            </ul>
-          </div>
 
-          <div class="showcase__item mix category-chairs">
-            <img class="showcase__img" src="images/showcase/3.jpg" alt="">
-            <h3 class="showcase__card-title">Wooden chair</h3>
-            <span class="showcase__price">$29.00</span>
-            <ul class="showcase__nav">
-              <li class="showcase__nav-item">
-                <a class="showcase__link" href="#"><svg width="20px" height="20px">
-                    <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
-                      d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
+              <button class="showcase__item">
+                <a class="showcase__link">
+                  <svg class="showcase__svg">
+                    <use xlink:href="sprite.svg#showcase-cart"></use>
                   </svg></a>
-              </li>
-              <li class="showcase__nav-item">
-                <a class="showcase__link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="20px">
-                    <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
-                      d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
-                  </svg></a>
-              </li>
-              <li class="showcase__nav-item">
-                <a class="showcase__link" href="#"><svg width="22px" height="18px">
-                    <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
-                      d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
-                  </svg></a>
-              </li>
-            </ul>
-          </div>
+              </button>
 
-          <div class="showcase__item mix category-chairs">
-            <img class="showcase__img" src="images/showcase/4.jpg" alt="">
-            <h3 class="showcase__card-title">Retro table</h3>
-            <span class="showcase__price">$29.00</span>
-            <ul class="showcase__nav">
-              <li class="showcase__nav-item">
-                <a class="showcase__link" href="#"><svg width="20px" height="20px">
-                    <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
-                      d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
+              <button class="showcase__item">
+                <a class="showcase__link">
+                  <svg class="showcase__svg">
+                    <use xlink:href="sprite.svg#showcase-like"></use>
                   </svg></a>
-              </li>
-              <li class="showcase__nav-item">
-                <a class="showcase__link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="20px">
-                    <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
-                      d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
-                  </svg></a>
-              </li>
-              <li class="showcase__nav-item">
-                <a class="showcase__link" href="#"><svg width="22px" height="18px">
-                    <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
-                      d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
-                  </svg></a>
-              </li>
-            </ul>
-          </div>
+              </button>
 
-          <div class="showcase__item mix category-lighting">
-            <img class="showcase__img" src="images/showcase/5.jpg" alt="">
-            <h3 class="showcase__card-title">Wooden radio</h3>
-            <span class="showcase__price">$29.00</span>
-            <ul class="showcase__nav">
-              <li class="showcase__nav-item">
-                <a class="showcase__link" href="#"><svg width="20px" height="20px">
-                    <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
-                      d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
-                  </svg></a>
-              </li>
-              <li class="showcase__nav-item">
-                <a class="showcase__link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="20px">
-                    <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
-                      d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
-                  </svg></a>
-              </li>
-              <li class="showcase__nav-item">
-                <a class="showcase__link" href="#"><svg width="22px" height="18px">
-                    <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
-                      d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
-                  </svg></a>
-              </li>
             </ul>
-          </div>
+          </article>
 
-          <div class="showcase__item mix category-lighting">
-            <img class="showcase__img" src="images/showcase/6.jpg" alt="">
-            <h3 class="showcase__card-title">Wooden chair</h3>
-            <span class="showcase__price">$29.00</span>
-            <ul class="showcase__nav">
-              <li class="showcase__nav-item">
-                <a class="showcase__link" href="#"><svg width="20px" height="20px">
-                    <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
-                      d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
-                  </svg></a>
-              </li>
-              <li class="showcase__nav-item">
-                <a class="showcase__link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="20px">
-                    <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
-                      d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
-                  </svg></a>
-              </li>
-              <li class="showcase__nav-item">
-                <a class="showcase__link" href="#"><svg width="22px" height="18px">
-                    <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
-                      d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
-                  </svg></a>
-              </li>
-            </ul>
-          </div>
+          <article class="showcase__article mix category-chairs">
 
-          <div class="showcase__item mix category-decor">
-            <img class="showcase__img" src="images/showcase/7.jpg" alt="">
-            <h3 class="showcase__card-title">Wooden chair</h3>
-            <span class="showcase__price">$29.00</span>
-            <ul class="showcase__nav">
-              <li class="showcase__nav-item">
-                <a class="showcase__link" href="#"><svg width="20px" height="20px">
-                    <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
-                      d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
-                  </svg></a>
-              </li>
-              <li class="showcase__nav-item">
-                <a class="showcase__link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="20px">
-                    <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
-                      d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
-                  </svg></a>
-              </li>
-              <li class="showcase__nav-item">
-                <a class="showcase__link" href="#"><svg width="22px" height="18px">
-                    <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
-                      d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
-                  </svg></a>
-              </li>
-            </ul>
-          </div>
+            <div class="showcase__img">
+              <img src="images/showcase/3.jpg" alt="Wooden radio">
+            </div>
 
-          <div class="showcase__item mix category-decor">
-            <img class="showcase__img" src="images/showcase/8.jpg" alt="">
-            <h3 class="showcase__card-title">Wooden radio</h3>
-            <span class="showcase__price">$29.00</span>
+
+            <h3 class="showcase__title">Wooden chair</h3>
+            <span class="showcase__price"><span>$</span>29.00</span>
+
+
             <ul class="showcase__nav">
-              <li class="showcase__nav-item">
-                <a class="showcase__link" href="#"><svg width="20px" height="20px">
-                    <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
-                      d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 15.000,3.357 15.000,7.499 C15.000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z" />
-                  </svg></a>
+
+              <li class="showcase__item">
+                <a class="showcase__link" href="#">
+                  <svg class="showcase__svg">
+                    <use xlink:href="sprite.svg#showcase-search"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="showcase__nav-item">
-                <a class="showcase__link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="20px">
-                    <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
-                      d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.667 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.673 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.999 6.484,19.999 C5.466,19.999 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.994 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.999 C18.109,19.999 18.055,19.999 18.014,19.999 C17.051,19.999 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
-                  </svg></a>
-              </li>
-              <li class="showcase__nav-item">
-                <a class="showcase__link" href="#"><svg width="22px" height="18px">
-                    <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
-                      d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.016,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.857 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.466 4.385,13.532 6.044,14.906 C7.749,16.317 9.994,17.999 11.009,17.999 C12.041,17.999 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.480 20.720,10.158 C21.366,9.174 22.095,7.792 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.674 C10.669,16.639 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.429 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.180 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.161 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.145 20.420,8.204 19.614,9.430 Z" />
-                  </svg></a>
-              </li>
+
+              <button class="showcase__item">
+                <a class="showcase__link">
+                  <svg class="showcase__svg">
+                    <use xlink:href="sprite.svg#showcase-cart"></use>
+                  </svg>
+                </a>
+              </button>
+
+              <button class="showcase__item">
+                <a class="showcase__link">
+                  <svg class="showcase__svg">
+                    <use xlink:href="sprite.svg#showcase-like"></use>
+                  </svg>
+                </a>
+              </button>
+
             </ul>
-          </div>
+          </article>
+
+          <article class="showcase__article mix category-chairs">
+
+            <div class="showcase__img">
+              <img src="images/showcase/4.jpg" alt="Wooden radio">
+            </div>
+
+            <h3 class="showcase__title">White chair</h3>
+            <span class="showcase__price"><span>$</span>29.00</span>
+
+
+            <ul class="showcase__nav">
+
+              <li class="showcase__item">
+                <a class="showcase__link" href="#">
+                  <svg class="showcase__svg">
+                    <use xlink:href="sprite.svg#showcase-search"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <button class="showcase__item">
+                <a class="showcase__link">
+                  <svg class="showcase__svg">
+                    <use xlink:href="sprite.svg#showcase-cart"></use>
+                  </svg>
+                </a>
+              </button>
+
+              <button class="showcase__item">
+                <a class="showcase__link">
+                  <svg class="showcase__svg">
+                    <use xlink:href="sprite.svg#showcase-like"></use>
+                  </svg>
+                </a>
+              </button>
+
+            </ul>
+          </article>
+
+          <article class="showcase__article mix category-lighting">
+
+            <div class="showcase__img">
+              <img src="images/showcase/5.jpg" alt="Wooden radio">
+            </div>
+
+            <h3 class="showcase__title">Wooden radio</h3>
+            <span class="showcase__price"><span>$</span>29.00</span>
+            <ul class="showcase__nav">
+
+              <li class="showcase__item">
+                <a class="showcase__link" href="#">
+                  <svg class="showcase__svg">
+                    <use xlink:href="sprite.svg#showcase-search"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <button class="showcase__item">
+                <a class="showcase__link">
+                  <svg class="showcase__svg">
+                    <use xlink:href="sprite.svg#showcase-cart"></use>
+                  </svg>
+                </a>
+              </button>
+
+              <button class="showcase__item">
+                <a class="showcase__link">
+                  <svg class="showcase__svg">
+                    <use xlink:href="sprite.svg#showcase-like"></use>
+                  </svg>
+
+                </a>
+              </button>
+
+            </ul>
+          </article>
+
+          <article class="showcase__article mix category-lighting">
+
+            <div class="showcase__img">
+              <img src="images/showcase/6.jpg" alt="Wooden radio">
+            </div>
+
+            <h3 class="showcase__title">Wooden chair</h3>
+            <span class="showcase__price"><span>$</span>29.00</span>
+            <ul class="showcase__nav">
+
+              <li class="showcase__item">
+                <a class="showcase__link" href="#">
+                  <svg class="showcase__svg">
+                    <use xlink:href="sprite.svg#showcase-search"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <button class="showcase__item">
+                <a class="showcase__link">
+                  <svg class="showcase__svg">
+                    <use xlink:href="sprite.svg#showcase-cart"></use>
+                  </svg>
+                </a>
+              </button>
+
+              <button class="showcase__item">
+                <a class="showcase__link">
+                  <svg class="showcase__svg">
+                    <use xlink:href="sprite.svg#showcase-like"></use>
+                  </svg>
+                </a>
+              </button>
+
+            </ul>
+          </article>
+
+          <article class="showcase__article mix category-decor">
+
+            <div class="showcase__img">
+              <img src="images/showcase/7.jpg" alt="Wooden radio">
+            </div>
+
+            <h3 class="showcase__title">White chair</h3>
+            <span class="showcase__price"><span>$</span>29.00</span>
+            <ul class="showcase__nav">
+
+              <li class="showcase__item">
+                <a class="showcase__link" href="#">
+                  <svg class="showcase__svg">
+                    <use xlink:href="sprite.svg#showcase-search"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <button class="showcase__item">
+                <a class="showcase__link">
+                  <svg class="showcase__svg">
+                    <use xlink:href="sprite.svg#showcase-cart"></use>
+                  </svg>
+                </a>
+              </button>
+
+              <button class="showcase__item">
+                <a class="showcase__link">
+                  <svg class="showcase__svg">
+                    <use xlink:href="sprite.svg#showcase-like"></use>
+                  </svg>
+                </a>
+              </button>
+
+            </ul>
+          </article>
+
+          <article class="showcase__article mix category-decor">
+
+            <div class="showcase__img">
+              <img class="showcase__img" src="images/showcase/8.jpg" alt="Wooden radio">
+            </div>
+
+            <h3 class="showcase__title">Retro table</h3>
+            <span class="showcase__price"><span>$</span>29.00</span>
+            <ul class="showcase__nav">
+
+              <li class="showcase__item">
+                <a class="showcase__link" href="#">
+                  <svg class="showcase__svg">
+                    <use xlink:href="sprite.svg#showcase-search"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <button class="showcase__item">
+                <a class="showcase__link">
+                  <svg class="showcase__svg">
+                    <use xlink:href="sprite.svg#showcase-cart"></use>
+                  </svg>
+                </a>
+              </button>
+
+              <button class="showcase__item">
+                <a class="showcase__link">
+                  <svg class="showcase__svg">
+                    <use xlink:href="sprite.svg#showcase-like"></use>
+                  </svg>
+                </a>
+              </button>
+
+            </ul>
+          </article>
+
+
 
         </div>
 
       </div>
-
-      <div class="lamp">
-        <div class="container__big">
-
-          <div class="lamp__items">
-            <div class="lamp__item">
-              <img class="lamp__img" src="images/lamp.png" alt="lamp">
-              <div class="lamp__inner">
-                <h4 class="lamp__title">Mirum Notare Tellus</h4>
-                <p class="lamp__text">LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight</p>
-                <a class="lamp__link" href="#">View More</a>
-              </div>
-            </div>
-
-            <div class="lamp__item lamp__item-second">
-              <img class="lamp__img" src="images/lamp2.png" alt="lamp">
-              <div class="lamp__inner">
-                <h4 class="lamp__title">Malesuada Tempor Euismod</h4>
-                <p class="lamp__text">50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight</p>
-                <a class="lamp__link" href="#">View More</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="design">
-        <div class="container">
-          <div class="design__inner">
-            <h2 class="title">
-              New Design
-            </h2>
-
-            <div class="design__filters">
-              <button class="design__btn" data-filter="all">All</button>
-              <button class="design__btn" data-filter=".category-a">Furnitures</button>
-              <button class="design__btn" data-filter=".category-b">Chairs</button>
-              <button class="design__btn" data-filter=".category-c">Lighting</button>
-              <button class="design__btn" data-filter=".category-d">Decor</button>
-            </div>
-          </div>
-
-          <div class="design__content">
-
-            <div class="design__card mix category-a">
-              <img class="degign__img" src="images/design/1.jpg" alt="design card">
-              <div class="design__card-text">
-                <h4 class="design__title">Beat Flat Pendant
-                  Black</h4>
-                <p class="design__style">Classic</p>
-              </div>
-            </div>
-
-            <div class="design__card mix category-b">
-              <img class="degign__img" src="images/design/2.jpg" alt="design card">
-              <div class="design__card-text">
-                <h4 class="design__title">Beat Flat Pendant
-                  Black</h4>
-                <p class="design__style">Classic</p>
-              </div>
-            </div>
-
-            <div class="design__card mix category-c">
-              <img class="degign__img" src="images/design/3.jpg" alt="design card">
-              <div class="design__card-text">
-                <h4 class="design__title">Beat Flat Pendant
-                  Black</h4>
-                <p class="design__style">Classic</p>
-              </div>
-            </div>
-
-            <div class="design__card mix category-d">
-              <img class="degign__img" src="images/design/4.jpg" alt="design card">
-              <div class="design__card-text">
-                <h4 class="design__title">Beat Flat Pendant
-                  Black</h4>
-                <p class="design__style">Classic</p>
-              </div>
-            </div>
-
-            <div class="design__card mix category-a">
-              <img class="degign__img" src="images/design/5.jpg" alt="design card">
-              <div class="design__card-text">
-                <h4 class="design__title">Beat Flat Pendant
-                  Black</h4>
-                <p class="design__style">Classic</p>
-              </div>
-            </div>
-
-            <div class="design__card mix category-b">
-              <img class="degign__img" src="images/design/6.jpg" alt="design card">
-              <div class="design__card-text">
-                <h4 class="design__title">Beat Flat Pendant
-                  Black</h4>
-                <p class="design__style">Classic</p>
-              </div>
-            </div>
-
-          </div>
-
-
-        </div>
-      </div>
-
     </section>
 
+    <div class="lamp">
+      <div class="container__wrapper">
+
+        <div class="lamp__items">
+          <div class="lamp__item">
+            <img class="lamp__img" src="images/lamp.png" alt="lamp">
+            <div class="lamp__inner">
+              <h4 class="lamp__title">Mirum Notare Tellus</h4>
+              <p class="lamp__text">LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight</p>
+              <a class="lamp__link" href="#">View More</a>
+            </div>
+          </div>
+
+          <div class="lamp__item lamp__item-second">
+            <img class="lamp__img" src="images/lamp2.png" alt="lamp">
+            <div class="lamp__inner">
+              <h4 class="lamp__title">Malesuada Tempor Euismod</h4>
+              <p class="lamp__text">50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight</p>
+              <a class="lamp__link" href="#">View More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <section class="design">
+      <div class="container" data-ref="container-2">
+        <div class="design__inner">
+          <h2 class="title design__titles">
+            New Design
+          </h2>
+
+          <div class="design__filters">
+            <button class="design__filter" data-filter="all">All</button>
+            <button class="design__filter" data-filter=".category-a">Furnitures</button>
+            <button class="design__filter" data-filter=".category-b">Chairs</button>
+            <button class="design__filter" data-filter=".category-c">Lighting</button>
+            <button class="design__filter" data-filter=".category-d">Decor</button>
+          </div>
+        </div>
+
+        <div class="design__content">
+
+          <article class="design__card mix category-a">
+            <div class="degign__img">
+            <img src="images/design/1.jpg" alt="design card">
+            </div>
+            <div class="design__text">
+              <a class="design__link" href="#">
+                <h3 class="design__title">Beat Flat Pendant
+                Black</h3>
+                </a>
+              <span class="design__style">Classic</span>
+            </div>
+          </article>
+
+            <article class="design__card mix category-b">
+              <div class="degign__img">
+                <img src="images/design/2.jpg" alt="design card">
+              </div>
+              <div class="design__text">
+                <a class="design__link" href="#">
+                  <h3 class="design__title">Lampe Sur Pieds
+                    Bamboo</h3>
+                </a>
+                <span class="design__style">Classic</span>
+              </div>
+            </article>
+
+            <article class="design__card mix category-c">
+              <div class="degign__img">
+                <img src="images/design/3.jpg" alt="design card">
+              </div>
+              <div class="design__text">
+                <a class="design__link" href="#">
+                  <h3 class="design__title">Rattan Rocking
+                    Chair</h3>
+                </a>
+                <span class="design__style">Classic</span>
+              </div>
+            </article>
+
+            <article class="design__card mix category-d">
+              <div class="degign__img">
+                <img src="images/design/4.jpg" alt="design card">
+              </div>
+              <div class="design__text">
+                <a class="design__link" href="#">
+                  <h3 class="design__title">Rattan Rocking
+                    Chair</h3>
+                </a>
+                <span class="design__style">Classic</span>
+              </div>
+            </article>
+
+            <article class="design__card mix category-b">
+              <div class="degign__img">
+                <img src="images/design/5.jpg" alt="design card">
+              </div>
+              <div class="design__text">
+                <a class="design__link" href="#">
+                  <h3 class="design__title">Rattan Rocking
+                    Chair</h3>
+                </a>
+                <span class="design__style">Classic</span>
+              </div>
+            </article>
+
+            <article class="design__card mix category-a">
+              <div class="degign__img">
+                <img src="images/design/6.jpg" alt="design card">
+              </div>
+              <div class="design__text">
+                <a class="design__link" href="#">
+                  <h3 class="design__title">Lampe Sur Pieds
+                    Bamboo</h3>
+                </a>
+                <span class="design__style">Classic</span>
+              </div>
+            </article>
+          
+        </div>
+
+      </div>
+
+      <div class="design__video">
+        <div class="design__video-img">
+          <img src="images/design/design-video-bg.jpg" alt="room">
+          <a class="design__video-link" data-fancybox href="https://youtu.be/kHwE_cMeSSM"> Play Video
+          </a>
+        </div>
+      </div>
+    </section>
+
+   
+
+
+
   </main>
-  <!-- ///////////////////////////////////////////////////////// -->/
+  <!-- ///////////////////////////////////////////////////////// -->
   <footer class="footer">
     <div class="container">
 
@@ -505,9 +654,9 @@
 
         <div class="footer__item">
           <a class="footer__logo" href="#">
-            <img class="logo__img" src="images/logo.svg" alt="logo">
+            <img class="logo__img" src="images/logo.png" alt="logo">
           </a>
-          <addres sclass="footer__address"><span>address:</span>4772 Wines Lane Houston, TX 77032</addres>
+          <address class="footer__address"><span>address:</span>4772 Wines Lane Houston, TX 77032</address>
           <a class="footer__phone" href="tel:+8323475843"><span>Telephone:</span>+832-347-5843</a>
           <a class="footer__email" href="mailto:contact@Glee.com"><span>Email:</span>contact@Glee.com</a>
         </div>
@@ -545,13 +694,13 @@
         <div class="footer__item">
           <div class="footer__title">newsletter</div>
 
-          <ul class="footer__categoty">
-            <li class="footer__list footer__list-item"> Subscribe by our newsletter and get update protidin.</li>
-          </ul>
+          <p class="footer__categoty"> Subscribe by our newsletter and get update protidin.</p>
 
           <form class="footer__form" action="#">
-            <input class="footer__form-input" type="text" placeholder="Email address" required>
-            <button class="footer__form-btn" type="submit">Subscribe</button>
+            <label class="visually-hidden" for="email-input">Enter Email</label>
+            <input class="footer__input" id="email-input" name="name-email" type="text" placeholder="Email address"
+              required>
+            <button class="footer__btn" type="submit">Subscribe</button>
           </form>
 
         </div>

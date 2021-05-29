@@ -1,15 +1,18 @@
 .design {
+  &__titles {
+    margin-bottom: 30px;
+  }
 
   &__filters {
     margin-bottom: 75px;
-    @extend %dmsans-700;
+    font-weight: 700;
 
     .mixitup-control-active {
       color: #191919;
     }
   }
 
-  &__btn {
+  &__filter {
     border: none;
     background-color: inherit;
     color: #8b8b8b;
@@ -28,10 +31,9 @@
   }
 
   &__content {
-    margin-bottom: 115px;
+    margin-bottom: 90px;
     display: flex;
     flex-wrap: wrap;
-
   }
 
   &__card {
@@ -39,38 +41,58 @@
     margin: 0 30px 30px 0;
   }
 
-  &__card:nth-child(3) {
+  &__card:nth-child(3n+3) {
     margin-right: 0;
   }
 
-  &__card:nth-child(6) {
-    margin-right: 0;
-  }
-
-
-
-
-  &__card-text {
+  &__text {
     position: absolute;
-    top: 40px;
-    left: 35px;
+    top: 36px;
+    left: 34px;
     max-width: 175px;
-    @extend %dmsans-700;
-
+    font-weight: 700;
   }
-
 
   &__title {
     font-size: 20px;
     color: $title;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $accent;
+    }
   }
 
   &__style {
     color: $accent;
     font-size: 16px;
+    line-height: 3;
+  }
+
+  &__video-img {
+    object-fit: cover;
+    background-position: center center;
+    max-height: 500px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+  }
+
+  &__video-link {
+    font-size: 0;
 
   }
 
+  &__video-link::after {
+    content: "";
+    position: absolute;
+    background-image: url('../images/design/design-play.svg');
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 127px;
+    height: 127px;
+  }
 
 }
-

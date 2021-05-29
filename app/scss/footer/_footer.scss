@@ -1,6 +1,6 @@
 .footer {
   padding-top: 80px;
-  margin-bottom: 40px;
+
 
   &__items {
     display: flex;
@@ -22,10 +22,6 @@
     margin-right: 10px;
   }
 
-  &__item:nth-child(3) {
-    margin-right: -4px;
-  }
-
   &__item:last-child {
     max-width: 280px;
     margin-right: -8px;
@@ -36,10 +32,11 @@
     margin-bottom: 22px;
   }
 
-  address {
+  &__address {
     line-height: 24px;
     margin-bottom: 10px;
     display: inline-block;
+    font-style: normal;
   }
 
   span {
@@ -55,7 +52,7 @@
 
 
   &__title {
-    @extend %dmsans-700;
+   font-weight: 700;
     font-size: 16px;
     line-height: 21px;
     color: $footer-title;
@@ -67,10 +64,11 @@
   &__categoty {
     padding: 0;
     color: $footer;
+    margin-bottom: 47px;
   }
 
   &__list {
-    list-style: none;
+
     margin-bottom: 10px;
   }
 
@@ -83,41 +81,45 @@
   }
 
   &__form {
-    width: 100%;
-    @extend %dmsans-400;
-    padding: 0;
-    margin: 0;
+    display: flex;
+
+    line-height: 16px;
   }
 
-  &__form-input {
-    width: 165px;
-    padding: 7px 15px;
+  &__input {
+    padding: 12px 15px;
+    width: 100%;
+    max-width: 170px;
     border: none;
     background-color: #fef7f0;
   }
 
-  &__form-input::placeholder {
-    @extend %dmsans-400;
+  &__input::placeholder {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
     font-size: 12px;
   }
 
-  &__form-btn {
-    @extend %btn;
+  &__btn {
+    padding: 12px 16px;
     border: none;
-    width: 100px;
-    line-height: 21px;
-    padding: 9px 5px;
-    
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    background-color: #a3bbc8;
+    cursor: pointer;
   }
 
   &__copyright {
     display: flex;
     justify-content: space-between;
-    @extend %rubik-400;
+    font-family: 'Rubik',sans-serif;
+    font-weight: 400;
     font-size: 14px;
     line-height: 32px;
     color: $footer;
     padding-top: 27px;
+    margin-bottom: 35px;
   }
 
   &__menu-inner {
@@ -152,4 +154,16 @@
   &__menu-list:last-child {
     padding-right: 0;
   }
+}
+
+.visually-hidden {
+  position: absolute;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
 }

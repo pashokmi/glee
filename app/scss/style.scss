@@ -1,17 +1,17 @@
-@import 'vars';
 @import 'fonts';
+@import 'vars';
 @import 'reset';
 @import 'libs';
 @import 'global';
 
 
 @import 'header/_header.scss';
-@import 'footer/_footer.scss';
 @import 'slider/_slider.scss';
 @import 'slider/_info.scss';
 @import 'showcase/_showcase.scss';
 @import 'showcase/_lamp.scss';
 @import 'showcase/_design.scss';
+@import 'footer/_footer.scss';
 
 
 
