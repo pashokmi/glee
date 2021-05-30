@@ -1,7 +1,5 @@
 .footer {
-  padding-top: 80px;
-
-
+  
   &__items {
     display: flex;
     justify-content: space-between;
@@ -74,6 +72,9 @@
 
   &__link {
     color: $footer;
+    &:hover {
+      border-bottom: 2px solid $footer;
+    }
   }
 
   &__list-item {
@@ -132,6 +133,9 @@
     list-style: none;
     padding: 0 15px;
     position: relative;
+    :hover{
+      border-bottom: 2px solid $footer;
+    }
   }
 
   &__menu-list::before {

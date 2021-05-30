@@ -1,5 +1,5 @@
 .header {
-  padding: 50px 0;
+  padding: 55px 0 45px;
   width: 100%;
   margin: 0 auto;
 
@@ -18,10 +18,9 @@
   display: flex;
   align-items: center;
 
-
   &__list {
     display: flex;
-    margin-right: 330px;
+    margin-right: 335px;
   }
 
   &__list:first-child {
@@ -30,7 +29,6 @@
 
   &__item {
     margin-right: 35px;
-
   }
 
   &__item:last-child {
@@ -42,7 +40,9 @@
     font-weight: 500;
     color: #436372;
     font-size: 15px;
-
+    &:hover{
+      border-bottom: 2px solid #436372;
+    }
   }
 }
 
@@ -53,7 +53,6 @@
   justify-content: center;
   align-content: center;
   margin-right: -5px;
-
 
   &__link-item {
     position: relative;
@@ -132,8 +131,8 @@
 #search {
   height: 15px;
   position: absolute;
-  top: 75px;
-  right: 345px;
+  top: 77px;
+  right: 343px;
 }
 
 #menu-btn {

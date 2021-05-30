@@ -4,13 +4,14 @@
   &__inner {
     display: flex;
     margin-bottom: 17px;
+
   }
 
   &__items {
     max-width: 880px;
     max-height: 170px;
-
-    padding: 43px 127px 41px 148px;
+    letter-spacing: -0.3px;
+    padding: 43px 127px 41px 143px;
     border-left: 1px solid #e8e4df;
   }
 
@@ -29,7 +30,7 @@
   }
 
   &__items:last-child {
-    padding: 42px 79px 41px 157px;
+    padding: 42px 79px 41px 155px;
   }
 
 
