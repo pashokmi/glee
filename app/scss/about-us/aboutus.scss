@@ -1,0 +1,165 @@
+.about {
+  font-family: 'Rubik', sans-serif;
+
+  &__title {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__img {
+    margin-right: 30px;
+
+    img {
+      height: 677px;
+      width: 570px;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      background-position: center center;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    margin-bottom: 120px;
+
+  }
+
+  &__exp {
+    max-width: 570px;
+    width: 100%;
+    padding: 80px 20px;
+  }
+
+  &__date {
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  &__date-num {
+    font-size: 140px;
+
+    font-weight: 700;
+    color: $accent;
+    margin-right: 30px;
+  }
+
+  &__date-items {
+    color: $about;
+
+  }
+
+  &__exp-title {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    color: $about;
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    font-weight: 400;
+    color: $about;
+    padding-bottom: 60px;
+    border-bottom: 3px solid #ebeef3;
+    margin-bottom: 40px;
+  }
+
+  &__working {
+    display: flex;
+  }
+
+  &__list {
+    padding: 0 25px 0 60px;
+    margin-right: 25px;
+    position: relative;
+    border-right: 1px solid #ebeef3;
+  }
+  &__list:last-child{
+    border-right: 0;
+  }
+  &__list--projekt::before{
+    content: "";
+    background-image: url('../images/icons/about-decor-1.svg');
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    width: 37px;
+    height: 40px;
+  }
+  &__list--revenue::before{
+    content: "";
+    background-image: url('../images/icons/about-decor-2.svg');
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    width: 37px;
+    height: 40px;
+  }
+  &__list--avards::before{
+    content: "";
+    background-image: url('../images/icons/about-decor-3.svg');
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 40px;
+  }
+
+  &__produkt {
+    color: $about;
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+  }
+
+  &name {
+    color: #4c4c4c;
+  }
+
+
+}
+
+
+
+.breadcrumbs {
+  background-color: #edf1f4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 0;
+  margin-bottom: 125px;
+
+  &__items {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 20px;
+    position: relative;
+    color: #888c91;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+    ::after {
+      content: "/";
+      top: 0px;
+      right: -15px;
+      position: absolute;
+    }
+
+    &__item:last-child::after {
+      display: none;
+    }
+  }
+
+  &__link {}
+
+
+
+}

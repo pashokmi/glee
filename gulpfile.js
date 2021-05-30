@@ -7,6 +7,7 @@ const uglify        = require('gulp-uglify');
 const imagemin      = require('gulp-imagemin');
 const del           = require('del');
 const browserSync   = require('browser-sync').create();
+const fileinclude   = require('gulp-file-include');
 
 function browsersync() {
   browserSync.init({
@@ -89,6 +90,17 @@ function cleanDist(){
   return del ('dist')
 }
 
+const html = () => {
+  return src(['app/*.html', '!app/html/*.html'])
+    .pipe(fileinclude({
+        prefix: '@@',
+        basepath: '@file',
+      }),
+    )
+    .pipe(dest('app'))
+    .pipe(browserSync.stream());
+};
+
 function watching() {
   watch(['app/scss/**/*.scss'],styles);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
@@ -102,6 +114,8 @@ exports.browsersync = browsersync;
 exports.watching = watching;
 exports.images = images;
 exports.cleanDist = cleanDist;
+exports.html = html;
+
 
 exports.build = series(cleanDist, images, build);
-exports.default =parallel(styles, scripts, browsersync, watching);
+exports.default = parallel(styles, scripts, html, browsersync, watching);
