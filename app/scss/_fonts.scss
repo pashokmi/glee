@@ -33,6 +33,14 @@
     url('../fonts/Rubik-Regular.woff') format('woff');
   font-display: swap;
 }
+@font-face {
+  font-family: 'Rubik';
+  font-style: light;
+  src: 
+    url('../fonts/Rubik-Light.woff2') format('woff2'),
+    url('../fonts/Rubik-Light.woff') format('woff');
+  font-display: swap;
+}
 
 @font-face {
   font-family: 'Rubik';
@@ -50,5 +58,11 @@
     url('../fonts/Poppins-Bold.woff') format('woff');
   font-display: swap;
 }
-
-
+  @font-face {
+  font-family: 'Poppins';
+  font-style: SemiBold;
+  src:
+    url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+    url('../fonts/Poppins-SemiBold.woff') format('woff');
+  font-display: swap;
+}

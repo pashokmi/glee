@@ -17,15 +17,16 @@
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-size: 14px;
+  }
 
-    ::after {
-      content: "/";
-      top: 0px;
-      right: -15px;
-      position: absolute;
-    }
-
-    &__item:last-child::after {
+  &__item::after {
+    content: "/";
+    top: 0px;
+    right: -15px;
+    position: absolute;
+  }
+  &__item:last-child{
+    &::after{
       display: none;
     }
   }
@@ -36,9 +37,12 @@
   font-family: 'Rubik', sans-serif;
 
   &__title {
+
     display: block;
     width: 100%;
     text-align: center;
+    font-weight: 300;
+    font-style: light;
   }
 
   &__img {
@@ -55,32 +59,36 @@
 
   &__inner {
     display: flex;
-    margin-bottom: 120px;
+    margin-bottom: 110px;
 
   }
 
   &__exp {
     max-width: 570px;
     width: 100%;
-    padding: 80px 20px;
+    padding: 100px 0 100px 18px;
   }
 
   &__date {
     display: flex;
+    align-items: center;
     margin-bottom: 50px;
   }
 
   &__date-num {
     font-size: 140px;
-
     font-weight: 700;
     color: $accent;
     margin-right: 30px;
+    margin-bottom: 40px;
   }
 
   &__date-items {
     color: $about;
+  }
 
+  &__date-item {
+    margin-bottom: 5px;
   }
 
   &__exp-title {
@@ -88,11 +96,13 @@
     font-weight: 700;
     color: $about;
     font-size: 36px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   &__text {
     font-weight: 400;
+    line-height: 1.9;
+    letter-spacing: -0.3px;
     color: $about;
     padding-bottom: 60px;
     border-bottom: 3px solid #ebeef3;
@@ -166,7 +176,7 @@
       display: flex;
       justify-content: space-around;
       padding-top: 165px;
-      padding-bottom: 80px;
+      padding-bottom: 88px;
       margin-bottom: 115px;
     }
   }
