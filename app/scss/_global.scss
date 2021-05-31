@@ -9,10 +9,8 @@ body {
   font-style: normal;
   display: flex;
   flex-direction: column;
-  font-family: 'DM Sans',sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 400;
- 
-  
 }
 
 .main {
@@ -32,7 +30,6 @@ body {
 }
 
 a {
-  
   font-style: normal;
 }
 
@@ -40,4 +37,12 @@ a {
   font-weight: 700;
   font-size: 36px;
   margin-bottom: 20px;
+}
+
+
+.sr-only {
+  font-size: 0;
+  overflow: hidden;
+  width: 0;
+  height: 0px;
 }
