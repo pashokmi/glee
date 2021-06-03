@@ -91,7 +91,7 @@ function cleanDist(){
 }
 
 const html = () => {
-  return src(['app/*.html', '!app/html/*.html'])
+  return src(['app/html/*.html'])
     .pipe(fileinclude({
         prefix: '@@',
         basepath: '@file',
@@ -102,9 +102,10 @@ const html = () => {
 };
 
 function watching() {
+  watch(['app/html**/*.html'], html);
   watch(['app/scss/**/*.scss'],styles);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
-  watch(['app/**/*.html']).on('change',browserSync.reload);
+  watch('app/**/*.html').on('change',browserSync.reload);
 }
 
 
