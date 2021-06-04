@@ -6,8 +6,9 @@
 
 
 @import 'header/_header.scss';
-@import 'home/slider/_slider.scss';
-@import 'home/slider/_info.scss';
+@import 'header/_breadcrumbs.scss';
+@import 'home/trend/_trend.scss';
+@import 'home/trend/_info.scss';
 @import 'home/showcase/_showcase.scss';
 @import 'home/showcase/_lamp.scss';
 @import 'home/showcase/_design.scss';
@@ -16,8 +17,7 @@
 @import 'about-us/_aboutus.scss';
 @import 'about-us/_team.scss';
 @import 'terms/terms.scss';
-@import 'log-in/log-in.scss';
-
+@import 'log-in/login.scss';
 @import 'footer/_footer.scss';
 
 
@@ -31,4 +31,3 @@
 
 
 
-@import 'media';

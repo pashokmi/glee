@@ -1,28 +1,30 @@
 .footer {
-  
-  &__items {
+  padding-top: 5px;
+
+  &__content {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #dae4e9;
     padding-bottom: 30px;
   }
 
-  &__item {
+  &__items {
     max-width: 200px;
     width: 100%;
-    @extend %rubik-400;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     color: $footer;
-  }
 
-  &__item:nth-child(2) {
-    margin-right: 10px;
-  }
+    &:nth-child(2) {
+      margin-right: 10px;
+    }
 
-  &__item:last-child {
-    max-width: 280px;
-    margin-right: -8px;
+    &:last-child {
+      max-width: 280px;
+      margin-right: -8px;
+    }
   }
 
   &__logo {
@@ -39,7 +41,7 @@
     font-style: normal;
   }
 
-  span {
+  &__span {
     text-transform: uppercase;
   }
 
@@ -50,14 +52,13 @@
     color: $footer;
   }
 
-
   &__title {
-   font-weight: 700;
+    font-weight: 700;
     font-size: 16px;
     line-height: 21px;
     color: $footer-title;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 17px;
     padding-top: 15px;
   }
 
@@ -67,25 +68,21 @@
     margin-bottom: 35px;
   }
 
-  &__list {
-
+  &__item {
     margin-bottom: 10px;
   }
 
   &__link {
     color: $footer;
+
     &:hover {
       border-bottom: 2px solid $footer;
     }
   }
 
-  &__list-item {
-    margin-bottom: 37px;
-  }
 
   &__form {
     display: flex;
-
     line-height: 16px;
   }
 
@@ -95,28 +92,31 @@
     max-width: 170px;
     border: none;
     background-color: #fef7f0;
+    &::placeholder {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+    }
   }
 
-  &__input::placeholder {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-  }
 
   &__btn {
     padding: 12px 16px;
     border: none;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 400;
     color: #fff;
-    background-color: #a3bbc8;
+    background-color: $accent;
     cursor: pointer;
+    transition: background-color 0.6s;
+
+    &:hover {
+      background-color: $about;
+    }
   }
 
   &__copyright {
     display: flex;
     justify-content: space-between;
-    font-family: 'Rubik',sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 32px;
@@ -131,36 +131,34 @@
     padding: 0;
   }
 
-  &__menu-list {
+  &__list--bottom {
     list-style: none;
     padding: 0 15px;
     position: relative;
-    :hover{
-      border-bottom: 2px solid $footer;
+    margin-bottom: 0;
+    &::before {
+      content: "";
+      position: absolute;
+      height: 15px;
+      width: 1px;
+      left: 0;
+      top: 10px;
+      background-color: $footer;
+    }
+  
+    &:first-child::before {
+      width: 0;
+    }
+  
+    &:first-child {
+      padding-left: 0;
+    }
+  
+    &:last-child {
+      padding-right: 0;
     }
   }
 
-  &__menu-list::before {
-    content: "";
-    position: absolute;
-    height: 15px;
-    width: 1px;
-    left: 0;
-    top: 10px;
-    background-color: $footer;
-  }
-
-  &__menu-list:first-child::before {
-    width: 0;
-  }
-
-  &__menu-list:first-child {
-    padding-left: 0;
-  }
-
-  &__menu-list:last-child {
-    padding-right: 0;
-  }
 }
 
 .visually-hidden {

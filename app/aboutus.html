@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us</title>
+  <title>Glee</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
   <h1 class="sr-only">furniture</h1>
   <header class="header">
-    <div class="container__wrapper">
+    <div class="wrapper">
 
       <div class="header__inner">
         <a class="logo" href="#">
@@ -49,33 +49,33 @@
           </ul>
 
 
-          <div class="menu-adds">
+          <div class="header__adds">
 
 
-            <button class="menu-adds__search">
-              <svg class="menu-adds__svg" id="search">
+            <button class="header__search">
+              <svg class="header__svg header__svg--search">
                 <use xlink:href="images/icons/sprite.svg#search"></use>
               </svg>
             </button>
 
-            <div class="menu-adds__link">
-              <a class="menu-adds__link-item" href="#">
-                <svg class="menu-adds__svg">
+            <div class="header__items">
+              <a class="header__link" href="#">
+                <svg class="header__svg">
                   <use xlink:href="images/icons/sprite.svg#like"></use>
                 </svg>
-                <span class="menu-adds__num">0</span>
+                <span class="header__num">0</span>
               </a>
 
-              <a class="menu-adds__link-item" href="#">
-                <svg class="menu-adds__svg">
+              <a class="header__link" href="#">
+                <svg class="header__svg">
                   <use xlink:href="images/icons/sprite.svg#cart"></use>
                 </svg>
-                <span class="menu-adds__num">0</span>
+                <span class="header__num">0</span>
               </a>
             </div>
 
-            <button class="menu-adds__btn">
-              <svg class="menu-adds__svg" id="menu-btn">
+            <button class="header__btn">
+              <svg class="header__svg header__svg--btn">
                 <use xlink:href="images/icons/sprite.svg#menu-btn"></use>
               </svg>
             </button>
@@ -102,7 +102,7 @@
 
        <li class="breadcrumbs__item">
          <a class="breadcrumbs__link" href="About Us">
-           About Us
+           About Us    
          </a>
        </li>
 
@@ -154,26 +154,26 @@
     <div class="about__stats">
       <div class="container">
 
-        <div class="about__stats-inner">
+        <div class="about__wrapper">
 
-          <div class="about__stats-items about__stats-items--statisfied">
-            <p class="about__stats-item">99%</p>
-            <p class="about__stats-name">Satisﬁed Clients Rate</p>
+          <div class="about__items about__items--statisfied">
+            <p class="about__item">99%</p>
+            <p class="about__names">Satisﬁed Clients Rate</p>
           </div>
 
-          <div class="about__stats-items about__stats-items--products">
-            <p class="about__stats-item">5020+</p>
-            <p class="about__stats-name">Products Delivered</p>
+          <div class="about__items about__items--products">
+            <p class="about__item">5020+</p>
+            <p class="about__names">Products Delivered</p>
           </div>
 
-          <div class="about__stats-items about__stats-items--time">
-            <p class="about__stats-item">23hr</p>
-            <p class="about__stats-name">Daily Working Time</p>
+          <div class="about__items about__items--time">
+            <p class="about__item">23hr</p>
+            <p class="about__names">Daily Working Time</p>
           </div>
 
-          <div class="about__stats-items about__stats-items--store">
-            <p class="about__stats-item">140+</p>
-            <p class="about__stats-name">Brands in Store</p>
+          <div class="about__items about__items--store">
+            <p class="about__item">140+</p>
+            <p class="about__names">Brands in Store</p>
           </div>
 
         </div>
@@ -255,6 +255,7 @@
 </section>
 
 <section class="news">
+  
   <div class="container">
     <div class="news__top">
       <h2 class="title">Our Insights & Articles</h2>
@@ -321,40 +322,37 @@
     </div>
   </div>
 
-  <div class="partners">
-    <div class="container">
-
-      <ul class="partners__inner">
-
-        <li class="partners__img">
-          <img src="images/logo_partner-1.png" alt="partners-peterson">
-        </li>
-
-        <li class="partners__img">
-          <img src="images/logo_partner-2.png" alt="partners-KMN">
-        </li>
-
-        <li class="partners__img">
-          <img src="images/logo_partner-3.png" alt="partners-chainforse">
-        </li>
-
-        <li class="partners__img">
-          <img src="images/logo_partner-4.png" alt="partners-NEXTG3N">
-        </li>
-
-        <li class="partners__img">
-          <img src="images/logo_partner-5.png" alt="partners-VINTAGE">
-        </li>
-
-
-      </ul>
-    </div>
-  </div>
-
-
-
-
 </section>
+ <div class="partners ">
+   <div class="container">
+
+     <ul class="partners__inner">
+
+       <li class="partners__img">
+         <img src="images/logo_partner-1.png" alt="partners-peterson">
+       </li>
+
+       <li class="partners__img">
+         <img src="images/logo_partner-2.png" alt="partners-KMN">
+       </li>
+
+       <li class="partners__img">
+         <img src="images/logo_partner-3.png" alt="partners-chainforse">
+       </li>
+
+       <li class="partners__img">
+         <img src="images/logo_partner-4.png" alt="partners-NEXTG3N">
+       </li>
+
+       <li class="partners__img">
+         <img src="images/logo_partner-5.png" alt="partners-VINTAGE">
+       </li>
+
+
+     </ul>
+   </div>
+ </div>
+
 </main>
 <!-- ///////////////////////////////////////////////////////// -->
 
@@ -362,59 +360,63 @@
 <footer class="footer">
   <div class="container">
 
-    <div class="footer__items">
+    <div class="footer__content">
 
-      <div class="footer__item">
+      <div class="footer__items">
 
         <a class="logo footer__logo" href="#">
           <img class="logo__img" src="images/logo.png" alt="logo">
         </a>
 
-        <address class="footer__address"><span>address:</span>4772 Wines Lane Houston, TX 77032</address>
-        <a class="footer__phone" href="tel:+8323475843"><span>Telephone:</span>+832-347-5843</a>
-        <a class="footer__email" href="mailto:contact@Glee.com"><span>Email:</span>contact@Glee.com</a>
+        <address class="footer__address">
+        <span class="footer__span">address:</span>
+        4772 Wines Lane Houston, TX 77032</address>
+        <span class="footer__span">Telephone:</span>
+        <a class="footer__phone" href="tel:+8323475843">+832-347-5843</a>
+        <span class="footer__span">Email:</span>
+        <a class="footer__email" href="mailto:contact@Glee.com">contact@Glee.com</a>
       </div>
 
-      <div class="footer__item">
+      <div class="footer__items">
         <div class="footer__title">services</div>
         <ul class="footer__categoty">
-          <li class="footer__list">
+          <li class="footer__item">
             <a class="footer__link" href="#">About us</a>
           </li>
-          <li class="footer__list">
+          <li class="footer__item">
             <a class="footer__link" href="#">Return Policy</a>
           </li>
-          <li class="footer__list">
+          <li class="footer__item">
             <a class="footer__link" href="#">Our Blog</a>
           </li>
-          <li class="footer__list">
+          <li class="footer__item">
             <a class="footer__link" href="#">Contact Us</a>
           </li>
-          <li class="footer__list">
+          <li class="footer__item">
             <a class="footer__link" href="#">Terms & Condition</a>
           </li>
         </ul>
       </div>
 
-      <div class="footer__item">
+      <div class="footer__items">
         <div class="footer__title">account</div>
         <ul class="footer__categoty">
-          <li class="footer__list">
+          <li class="footer__item">
             <a class="footer__link" href="#">Your Account</a>
           </li>
-          <li class="footer__list">
+          <li class="footer__item">
             <a class="footer__link" href="#">Checkout</a>
           </li>
-          <li class="footer__list">
+          <li class="footer__item">
             <a class="footer__link" href="#">Login</a>
           </li>
-          <li class="footer__list">
+          <li class="footer__item">
             <a class="footer__link" href="#">Register</a>
           </li>
         </ul>
       </div>
 
-      <div class="footer__item">
+      <div class="footer__items">
         <div class="footer__title">newsletter</div>
 
         <p class="footer__categoty"> Subscribe by our newsletter and get update protidin.</p>
@@ -431,32 +433,33 @@
 
     <div class="footer__copyright">
       <p class="footer__copy">©2020 CopyRight Example. All rights reserved. </p>
-      <div class="footer__menu">
-        <ul class="footer__menu-inner">
 
-          <li class="footer__menu-list">
-            <a class="footer__menu-link" href="#">
-              Home
-            </a>
-          </li>
-          <li class="footer__menu-list">
-            <a class="footer__menu-link" href="#">
-              About
-            </a>
-          </li>
-          <li class="footer__menu-list">
-            <a class="footer__menu-link" href="#">
-              Blog
-            </a>
-          </li>
-          <li class="footer__menu-list">
-            <a class="footer__menu-link" href="#">
-              Contact
-            </a>
-          </li>
+      <ul class="footer__menu-inner">
 
-        </ul>
-      </div>
+        <li class="footer__item footer__list--bottom">
+          <a class="footer__link" href="#">
+            Home
+          </a>
+        </li>
+        <li class="footer__item footer__list--bottom">
+          <a class="footer__link" href="#">
+            About
+          </a>
+        </li>
+        <li class="footer__item footer__list--bottom">
+          <a class="footer__link" href="#">
+            Blog
+          </a>
+        </li>
+        <li class="footer__item footer__list--bottom">
+          <a class="footer__link" href="#">
+            Contact
+          </a>
+        </li>
+
+
+      </ul>
+
     </div>
   </div>
 </footer>

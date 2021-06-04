@@ -1,5 +1,5 @@
 .header {
-  padding: 55px 0 45px;
+  padding: 45px 0 45px;
   width: 100%;
   margin: 0 auto;
 
@@ -8,53 +8,17 @@
     justify-content: space-between;
     align-items: center;
   }
-}
 
-.logo {
-  margin-right: 160px;
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-
-  &__list {
+  &__adds {
     display: flex;
-    margin-right: 335px;
-  }
-
-  &__list:first-child {
-    padding-left: 0;
-  }
-
-  &__item {
-    margin-right: 35px;
-  }
-
-  &__item:last-child {
-    margin-right: 0;
+    padding-top: 4px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-right: -5px;
   }
 
   &__link {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    color: #436372;
-    font-size: 15px;
-    &:hover{
-      border-bottom: 2px solid #436372;
-    }
-  }
-}
-
-.menu-adds {
-  display: flex;
-  padding-top: 4px;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  margin-right: -5px;
-
-  &__link-item {
     position: relative;
     display: block;
     border: none;
@@ -70,8 +34,7 @@
     margin-right: 20px;
   }
 
-
-  &__link {
+  &__items {
     display: flex;
     justify-content: space-around;
     width: 180px;
@@ -81,20 +44,20 @@
     padding: 22px 11px 10px;
     margin-right: 17px;
     position: relative;
-  }
 
-  &__link::before {
-    content: '';
-    width: 1px;
-    height: 32px;
-    top: 10px;
-    left: 90px;
-    position: absolute;
-    background-color: #fde7d3;
+    &::before {
+      content: '';
+      width: 1px;
+      height: 32px;
+      top: 10px;
+      left: 90px;
+      position: absolute;
+      background-color: #fde7d3;
+    }
   }
 
   &__btn {
-    background-color: #a3bbc8;
+    background-color: $default;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,16 +86,48 @@
     color: #3d525e;
     text-align: center;
     line-height: 16px;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
+  }
+
+  &__svg--btn {
+    fill: #fff;
+  }
+
+  &__svg--search {
+    height: 15px;
   }
 }
 
-#search {
-  height: 15px;
-  
+.logo {
+  margin-right: 160px;
 }
 
-#menu-btn {
-  fill: #fff;
+.menu {
+  display: flex;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    margin-right: 335px;
+  }
+
+  &__item {
+    margin-right: 35px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+
+
+  &__link {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: $default;
+    font-size: 15px;
+
+    &:hover {
+      border-bottom: 2px solid $default;
+    }
+  }
 }

@@ -11,6 +11,8 @@ body {
   flex-direction: column;
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
+  background-color: #fff;
+  
 }
 
 .main {
@@ -23,7 +25,7 @@ body {
   padding: 0 15px;
 }
 
-.container__wrapper {
+.wrapper {
   max-width: 1800px;
   margin: 0 auto;
   padding: 0 15px;

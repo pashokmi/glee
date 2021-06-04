@@ -7,39 +7,11 @@ $about:#243f4d;
 $bgorange: #fcd7b6;
 
 
-%rubik-400 {
-  font-family: 'Rubik', sans-serif;
-  font-weight: 400;
-}
-
-%rubik-500 {
-  font-family: 'Rubik', sans-serif;
-  font-weight: 500;
-}
-
-%dmsans-400 {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 400;
-}
-
-%dmsans-500 {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 500;
-}
-
-%dmsans-700 {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 700;
-}
 
 %btn{
   background-color: $accent;
   color: #fff;
   cursor: pointer;
-}
-%bgi{
-  background-repeat: no-repeat;
-  
 }
 
 @function max($numbers...) {

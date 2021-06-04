@@ -9,15 +9,19 @@
     position: relative;
     color: #243f4d;
     margin-right: 30px;
+    max-width: 870px;
+    width: 100%;
+    background-color: #feefe2;
+    padding: 80px 0;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
-  &__item:last-child {
-    margin-right: 0;
-  }
 
   &__item-second {
     .lamp__inner {
-      padding: 80px 105px 82px 439px;
+      padding: 0 105px 0 433px;
     }
 
     .lamp__title {
@@ -28,7 +32,6 @@
     .lamp__text {
       margin-bottom: 26px;
     }
-
   }
 
   &__img {
@@ -40,8 +43,7 @@
   }
 
   &__inner {
-    background-color: #feefe2;
-    padding: 94px 141px 94px 390px;
+    padding: 15px 141px 0 390px;
   }
 
   &__title {
@@ -68,23 +70,23 @@
     font-size: 15px;
     border: 1px solid #b3b7b5;
     color: #436372;
-    padding: 20px 0px 20px 20px;
+    padding: 15px 0px 18px 20px;
     border-radius: 5px;
     position: relative;
     display: block;
     max-width: 180px;
     width: 100%;
+    &::before {
+      content: "";
+      background-image: url('../images/arrows-bg.svg');
+      position: absolute;
+      top: 25px;
+      left: 140px;
+      height: 22px;
+      width: 22px;
+      background-repeat: no-repeat;
+    }
   }
 
-  &__link::before {
-    content: "";
-    background-image: url('../images/arrows-bg.svg');
-    position: absolute;
-    top: 25px;
-    left: 140px;
-    height: 22px;
-    width: 22px;
-    background-repeat: no-repeat;
-  }
 
 }

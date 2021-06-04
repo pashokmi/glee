@@ -1,14 +1,14 @@
 $(function () {
 
-  $('.slider__inner').slick({
+  $('.trend__inner').slick({
     dots: true,
     arrows: false,
     fade: true
   })
 
 
-  var containerEl1 = document.querySelector('[data-ref="container-1"]');
-  var containerEl2 = document.querySelector('[data-ref="container-2"]');
+  var containerEl1 = document.querySelector('[data-ref="showcase"]');
+  var containerEl2 = document.querySelector('[data-ref="design"]');
 
   var config = {
     controls: {

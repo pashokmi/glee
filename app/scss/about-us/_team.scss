@@ -10,6 +10,29 @@
     width: 100%;
     margin-right: 30px;
     color: $about;
+
+    &-link {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      color: #fff;
+      background-color: $accent;
+      border-radius: 7px;
+      padding: 13px 60px 13px 16px;
+      position: relative;
+    }
+
+    &-link::after {
+      content: "";
+      background-image: url('../images/team/team-arrow.svg');
+      position: absolute;
+      background-repeat: no-repeat;
+      width: 18px;
+      height: 19px;
+      top: 20px;
+      right: 22px;
+      letter-spacing: -0.7px;
+
+    }
   }
 
   &__title {
@@ -30,30 +53,8 @@
     width: 100%;
     line-height: 30px;
     letter-spacing: -0.1px;
-  }
-
-  &__side-link {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    color: #fff;
-    background-color: $accent;
-    border-radius: 7px;
-    padding: 13px 60px 13px 16px;
-    position: relative;
-
-  }
-
-  &__side-link::after {
-    content: "";
-    background-image: url('../images/team/team-arrow.svg');
-    position: absolute;
-    background-repeat: no-repeat;
-    width: 18px;
-    height: 19px;
-    top: 20px;
-    right: 22px;
-    letter-spacing: -0.7px;
-
+    max-height: 500px;
+    overflow: auto;
   }
 
   &__items {
@@ -66,11 +67,13 @@
     margin-bottom: 100px;
     position: relative;
     box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    max-height: 320px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
   }
 
-  &__item:nth-child(2n) {
-    margin-right: 0;
-  }
 
   &__img {
     img {
@@ -78,7 +81,6 @@
       height: 320px;
       background-position: center center;
       object-fit: cover;
-
     }
   }
 
@@ -114,38 +116,38 @@
     position: relative;
     bottom: 44px;
     right: -191px;
+    transition: background-color 0.4s;
+
+    &:hover {
+      background-color: $accent;
+    }
+
+    &:last-child {
+      right: -195px;
+    }
+
+    &--instagram::before {
+      content: "";
+      background-image: url('../images/team/team-inst.svg');
+      position: absolute;
+      background-repeat: no-repeat;
+      width: 18px;
+      height: 19px;
+      top: 11px;
+      right: 11px;
+    }
+
+    &--google::before {
+      content: "";
+      background-image: url('../images/team/team-google.svg');
+      width: 25px;
+      height: 19px;
+      top: 13px;
+      right: 6px;
+      position: absolute;
+      background-repeat: no-repeat;
+    }
   }
-
-  &__link:last-child {
-    right: -195px;
-  }
-
-  &__link--instagram::before {
-    content: "";
-    background-image: url('../images/team/team-inst.svg');
-    position: absolute;
-    background-repeat: no-repeat;
-    width: 18px;
-    height: 19px;
-    top: 10px;
-    right: 10px;
-
-
-  }
-
-  &__link--google::before {
-    content: "";
-    background-image: url('../images/team/team-google.svg');
-    width: 25px;
-    height: 19px;
-    top: 12px;
-    right: 6px;
-    position: absolute;
-    background-repeat: no-repeat;
-  }
-
-
-
 
 
 }
