@@ -17,7 +17,7 @@
 
     &::after {
       content: "";
-      background-image: url('../images/news/news-arrow.svg');
+      background-image: url('../images/icon/news-arrow.svg');
       width: 6px;
       height: 11px;
       position: absolute;
@@ -98,7 +98,7 @@
     &::before {
       content: "";
       position: absolute;
-      background-image: url('../images/news/calendar.svg');
+      background-image: url('../images/icon/calendar.svg');
       top: -4px;
       left: 2px;
       width: 21px;
@@ -114,7 +114,7 @@
     &::before {
       content: "";
       position: absolute;
-      background-image: url('../images/news/user.svg');
+      background-image: url('../images/icon/user.svg');
       top: -4px;
       left: 2px;
       width: 21px;

@@ -85,7 +85,7 @@
 
   &__list--projekt::before {
     content: "";
-    background-image: url('../images/icons/about-decor-1.svg');
+    background-image: url('../images/icon/about-decor-list.svg');
     position: absolute;
     background-repeat: no-repeat;
     top: 0;
@@ -96,7 +96,7 @@
 
   &__list--revenue::before {
     content: "";
-    background-image: url('../images/icons/about-decor-2.svg');
+    background-image: url('../images/icon/about-decor-meg.svg');
     position: absolute;
     background-repeat: no-repeat;
     top: 0;
@@ -107,7 +107,7 @@
 
   &__list--avards::before {
     content: "";
-    background-image: url('../images/icons/about-decor-3.svg');
+    background-image: url('../images/icon/about-decor-win.svg');
     position: absolute;
     background-repeat: no-repeat;
     top: 0;
@@ -156,25 +156,25 @@
     }
 
     &--statisfied::before {
-      background-image: url('../images/icons/about-decor-4.svg');
+      background-image: url('../images/icon/about-decor-stat.svg');
       top: -84px;
       left: 55px;
     }
 
     &--products::before {
-      background-image: url('../images/icons/about-decor-5.svg');
+      background-image: url('../images/icon/about-decor-del.svg');
       top: -76px;
       left: 45px;
     }
 
     &--time::before {
-      background-image: url('../images/icons/about-decor-6.svg');
+      background-image: url('../images/icon/about-decor-hr.svg');
       top: -87px;
       left: 44px;
     }
 
     &--store::before {
-      background-image: url('../images/icons/about-decor-7.svg');
+      background-image: url('../images/icon/about-decor-st.svg');
       top: -88px;
       left: 36px;
     }
