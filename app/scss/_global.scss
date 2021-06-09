@@ -11,8 +11,9 @@ body {
   flex-direction: column;
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
-  background-color: #fff;
-  
+  background-color: $white;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .main {

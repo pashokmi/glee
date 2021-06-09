@@ -5,7 +5,12 @@ $footer: #7b7b7b;
 $footer-title: #1f2044;
 $about:#243f4d;
 $bgorange: #fcd7b6;
-
+$athensgray: #ebeef3;
+$tundora: #c4c4c4;
+$white:#fff;
+$comet:#565872;
+$shaft:#262626;
+$scorpion:#585858;
 
 
 %btn{
@@ -22,3 +27,6 @@ $bgorange: #fcd7b6;
 @return m#{i}n(#{$numbers});
 }
 
+// font-family: 'Rubik',
+// sans-serif;
+// font-weight: 400;

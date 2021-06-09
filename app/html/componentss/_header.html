@@ -1,91 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
+<header class="header">
+  <div class="wrapper">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Glee</title>
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
-
-<body>
-  <h1 class="sr-only">furniture</h1>
-  <header class="header">
-    <div class="wrapper">
-
-      <div class="header__inner">
+    <div class="header__inner">
+      
+      
+      
+      <nav class="menu">
+        
         <a class="logo" href="#">
           <img class="logo__img" src="images/logo.png" alt="logo">
         </a>
-        <nav class="menu">
-
-          <ul class="menu__list">
-
-            <li class="menu__item">
-              <a class="menu__link" href="#">Home +</a>
-            </li>
-
-            <li class="menu__item">
-              <a class="menu__link" href="#">About</a>
-            </li>
-
-            <li class="menu__item">
-              <a class="menu__link" href="#">Services</a>
-            </li>
-
-            <li class="menu__item">
-              <a class="menu__link" href="#">Pages +</a>
-            </li>
-
-            <li class="menu__item">
-              <a class="menu__link" href="#">News</a>
-            </li>
-
-            <li class="menu__item">
-              <a class="menu__link" href="#">Contact</a>
-            </li>
-
-          </ul>
 
 
-          <div class="header__adds">
+        <ul class="menu__list menu__list--active">
+
+          <li class="menu__item">
+            <a class="menu__link" href="#">Home +</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="#">About</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="#">Services</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="#">Pages +</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="#">News</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="#">Contact</a>
+          </li>
+
+        </ul>
 
 
-            <button class="header__search">
-              <svg class="header__svg header__svg--search">
-                <use xlink:href="images/icons/sprite.svg#search"></use>
+        <div class="header__adds">
+
+
+          <button class="header__search">
+            <svg class="header__svg header__svg--search">
+              <use xlink:href="images/icons/sprite.svg#search"></use>
+            </svg>
+          </button>
+
+          <div class="header__items">
+            <a class="header__link" href="#">
+              <svg class="header__svg">
+                <use xlink:href="images/icons/sprite.svg#heart"></use>
               </svg>
-            </button>
+              <span class="header__num">0</span>
+            </a>
 
-            <div class="header__items">
-              <a class="header__link" href="#">
-                <svg class="header__svg">
-                  <use xlink:href="images/icons/sprite.svg#heart"></use>
-                </svg>
-                <span class="header__num">0</span>
-              </a>
-
-              <a class="header__link" href="#">
-                <svg class="header__svg">
-                  <use xlink:href="images/icons/sprite.svg#cart"></use>
-                </svg>
-                <span class="header__num">0</span>
-              </a>
-            </div>
-
-            <button class="header__btn">
-              <svg class="header__svg header__svg--btn">
-                <use xlink:href="images/icons/sprite.svg#menu-btn"></use>
+            <a class="header__link" href="#">
+              <svg class="header__svg">
+                <use xlink:href="images/icons/sprite.svg#cart"></use>
               </svg>
-            </button>
-
+              <span class="header__num">0</span>
+            </a>
           </div>
-        </nav>
 
-      </div>
+          <button class="header__btn">
+            <svg class="header__svg header__svg--btn">
+              <use xlink:href="images/icons/sprite.svg#menu-btn"></use>
+            </svg>
+          </button>
+
+        </div>
+
+        <button class="menu__btn menu__btn--active">
+          <span class="menu__btn-line"></span>
+        </button>
+
+      </nav>
+
+
     </div>
-  </header>
-
-
-  <main class="main">
+  </div>
+</header>

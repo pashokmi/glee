@@ -14,7 +14,7 @@
     &-link {
       font-family: 'Poppins', sans-serif;
       font-weight: 600;
-      color: #fff;
+      color: $white;
       background-color: $accent;
       border-radius: 7px;
       padding: 13px 60px 13px 16px;
@@ -88,12 +88,12 @@
     position: absolute;
     padding: 25px 25px 16px 25px;
     bottom: -85px;
-    background-color: #fff;
+    background-color: $white;
     width: 326px;
   }
 
   &__name {
-    color: #436372;
+    color: $default;
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 13px;
@@ -102,12 +102,12 @@
   &__position {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
-    color: #565872;
+    color: $comet;
   }
 
   &__link {
     font-size: 0;
-    background-color: #f6f6f6;
+    background-color: $athensgray;
     border-radius: 50%;
     padding: 20px;
     text-align: center;

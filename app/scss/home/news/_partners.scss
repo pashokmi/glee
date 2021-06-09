@@ -1,5 +1,5 @@
 .partners {
-  background-color: #fef7f0;
+  background-color: $athensgray;
   margin: -172px 0 76px;
   padding: 265px 0 87px;
 
@@ -15,4 +15,8 @@
       padding: 0 45px;
     }
   }
+}
+.partners--bg {
+  margin: 0 0 76px;
+  padding: 100px 0 87px;
 }

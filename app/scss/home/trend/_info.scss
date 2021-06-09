@@ -1,35 +1,26 @@
-.trend {
-  &__order {
-    background-color: #fef7f0;
-  }
-}
-
 .order {
 
-  &__inner {
+  &__items {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 17px;
 
   }
 
-  &__items {
+  &__list {
     max-width: 880px;
     max-height: 170px;
     letter-spacing: -0.3px;
-    padding: 43px 127px 41px 143px;
-    border-left: 1px solid #e8e4df;
+    padding: 45px 0 45px 145px;
+    border-left: 1px solid $athensgray;
+    background-color: #fef7f0;
+    width: 33.3%;
 
     &:first-child {
-      border: none;
+      border-left: none;
     }
 
-    &:nth-child(2) {
-      padding: 54px 155px 41px 156px;
-    }
 
-    &:last-child {
-      padding: 42px 79px 41px 155px;
-    }
   }
 
 
@@ -51,10 +42,12 @@
     }
   }
 
+
   &__title {
+    font-family: 'DM Sans', sans-serif;
     font-weight: 700;
     font-size: 18px;
-    color: #414141;
+    color: $scorpion;
     margin-bottom: 5px;
   }
 
@@ -62,6 +55,37 @@
     font-size: 16px;
     line-height: 30px;
     max-width: 218px;
-    color: #585858;
+    color: $scorpion;
+  }
+}
+
+
+@media (max-width: 1500px) {
+
+  .order__list {
+    padding: 45px 0 45px 100px;
+  }
+
+}
+
+
+@media (max-width: 1200px) {
+
+  .order__list {
+    padding: 20px 10px;
+    max-width: 100%;
+  }
+
+  .order__item {
+    margin: 0 auto;
+    max-width: 290px;
+  }
+}
+
+@media (max-width: 1200px){
+  .order__list{
+    width: 100%;
+    border-bottom: 1px solid $athensgray;
+    border-left:none;
   }
 }

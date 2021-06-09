@@ -1,8 +1,30 @@
-@@include('componentss/_header.html',)
-@@include('componentss/_breadcrumbs.html', {
-title: "log in" })
-@@include('componentss/login/_login.html',)
-@@include('componentss/home/_partners.html', { addClass: "partners--log-in", })
-@@include('componentss/_footer.html')
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log in</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  @@include('componentss/_header.html')
+  <main class="main">
+    <h1 class="sr-only">Login</h1>
+
+   @@include('componentss/_breadcrumbs.html', {
+   title: "log in" })
+   @@include('componentss/login/_login.html',)
+   @@include('componentss/home/_partners.html', { addClass: "partners--bg", })
+  </main>
+  @@include('componentss/_footer.html')
+
+  <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
  

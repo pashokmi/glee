@@ -1,10 +1,8 @@
 .trend {
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
+  background-color: $bgorange;
 
-  &__wrapper {
-    background-color: #fcd7b6;
-  }
 
   &__inner {
     color: #243f4d;
@@ -25,12 +23,14 @@
   }
 
 
-  &__item-block {
-    display: flex;
+
+  &__item {
+    display: flex !important;
   }
 
   &__content {
     margin-right: 110px;
+
   }
 
   &__title {
@@ -103,16 +103,77 @@
         font-weight: 500;
         font-size: 12px;
         margin-right: 12px;
-        background-color: #fde3cc;
+        background-color: $bgorange;
       }
 
       &.slick-active {
         button {
-          background-color: #fff;
-          color: #243f4d;
+          background-color: $white;
+          color: $about;
         }
       }
     }
   }
 
+}
+
+@media (max-width: 1500px) {
+  .trend {
+
+    &__inner::before {
+      right: 25px;
+
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .trend {
+
+    &__inner::before {
+      display: none;
+
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .trend {
+    &__inner {
+      padding-top: 100px;
+    }
+
+    &__inner::before {
+      display: none;
+
+    }
+
+    &__item {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__content{
+      margin-right: 0;
+      text-align: center;
+    }
+    &__img {
+      img {
+        padding-top: 30px;
+        margin-bottom: 100px;
+      }
+    }
+    &__link{
+      margin: 0 auto;
+    }
+
+  }
+}
+
+@media (max-width: 576px) {
+  .trend {
+    &__title {
+      font-size: 52px;
+
+    }
+  }
 }

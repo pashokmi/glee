@@ -1,8 +1,5 @@
 .breadcrumbs {
-  background-color: #edf1f4;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  background-color: $athensgray;
   padding: 30px 0;
   margin-bottom: 125px;
 
@@ -16,12 +13,13 @@
 
   &__items {
     display: flex;
+    justify-content: center;
   }
 
   &__item {
     margin-right: 20px;
     position: relative;
-    color: #888c91;
+    color: $tundora;
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -33,6 +31,7 @@
     }
   
     &:last-child {
+      margin-right: 0;
       &::after {
         display: none;
       }

@@ -1,0 +1,189 @@
+@@include('componentss/_header.html',)
+@@include('componentss/_breadcrumbs.html', {
+title: "Product list 1" })
+
+<section class="product">
+  <div class="container">
+
+    <div class="product__inner">
+
+      <div class="product__filters filter">
+
+
+        <div class="filter__category category">
+          <p class="filter__title">category</p>
+
+          <form class="category__form" action="#">
+            <label class="category__label">
+              <span class="category__name">Chair</span>
+
+              <div class="category__box">
+                <input class="category__input" type="checkbox">
+                <span class="category__checkbox"></span>
+              </div>
+            </label>
+
+            <label class="category__label">
+              <span class="category__name">Table</span>
+
+              <div class="category__box">
+                <input class="category__input" type="checkbox">
+                <span class="category__checkbox"></span>
+              </div>
+            </label>
+
+            <label class="category__label">
+              <span class="category__name">Lamp</span>
+
+              <div class="category__box">
+                <input class="category__input" type="checkbox">
+                <span class="category__checkbox"></span>
+              </div>
+            </label>
+
+            <label class="category__label">
+              <span class="category__name">Watch</span>
+
+              <div class="category__box">
+                <input class="category__input" type="checkbox">
+                <span class="category__checkbox"></span>
+              </div>
+            </label>
+
+            <label class="category__label">
+              <span class="category__name">Clock</span>
+              <div class="category__box">
+                <input class="category__input" type="checkbox">
+                <span class="category__checkbox"></span>
+              </div>
+            </label>
+
+
+          </form>
+
+        </div>
+
+        <div class="filter__price price">
+          <p class="filter__title">price</p>
+
+          <form class="price__form" action="#">
+            <input class="price__input" type="text" data-min="0" data-max="1000" data-from="100" data-to="500">
+
+            <label class="price__label">
+              <span>
+                $<span class="price__from"></span>
+                $<span class="price__to"></span>
+              </span>
+            </label>
+          </form>
+        </div>
+
+        <div class="filter__brand brand">
+          <p class="filter__title">brand</p>
+
+          <form class="brand__form" action="#">
+            <label class="brand__label">
+              <div class="brand__wrapper">
+                <span class="brand__name">RFL</span>
+                <span class="brand__quantity">(10)</span>
+              </div>
+
+              <div class="brand__box">
+                <input class="brand__input" type="checkbox">
+                <span class="brand__checkbox"></span>
+              </div>
+            </label>
+
+            <label class="brand__label">
+
+              <div class="brand__wrapper">
+                <span class="brand__name">Brothers</span>
+                <span class="brand__quantity">(21)</span>
+              </div>
+
+              <div class="brand__box">
+                <input class="brand__input" type="checkbox">
+                <span class="brand__checkbox"></span>
+              </div>
+            </label>
+
+            <label class="brand__label">
+             <div class="brand__wrapper">
+               <span class="brand__name">Regal</span>
+               <span class="brand__quantity">(3)</span>
+             </div>
+
+              <div class="brand__box">
+                <input class="brand__input" type="checkbox">
+                <span class="brand__checkbox"></span>
+              </div>
+            </label>
+
+            <label class="brand__label">
+             <div class="brand__wrapper">
+               <span class="brand__name">Nadia</span>
+               <span class="brand__quantity">(14)</span>
+             </div>
+
+              <div class="brand__box">
+                <input class="brand__input" type="checkbox">
+                <span class="brand__checkbox"></span>
+              </div>
+            </label>
+
+            <label class="brand__label">
+              <div class="brand__wrapper">
+                <span class="brand__name"> Otobi</span>
+                <span class="brand__quantity">(6)</span>
+              </div>
+
+              <div class="brand__box">
+                <input class="brand__input" type="checkbox">
+                <span class="brand__checkbox"></span>
+              </div>
+            </label>
+
+
+          </form>
+
+        </div>
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="product__content">
+
+      </div>
+
+
+
+
+
+    </div>
+
+
+  </div>
+</section>
+
+
+
+
+
+
+@@include('componentss/home/_partners.html', { addClass: "partners--bg", })
+@@include('componentss/_footer.html')

@@ -19,14 +19,14 @@
     text-align: center;
 
     .mixitup-control-active {
-      color: #191919;
+      color: $shaft;
     }
   }
 
   &__filter {
     border: none;
     background-color: inherit;
-    color: #8b8b8b;
+    color: $tundora;
     cursor: pointer;
     margin-right: 30px;
     padding: 0;

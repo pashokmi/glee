@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,93 +6,102 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Glee</title>
+  <title>About Us</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-  <h1 class="sr-only">furniture</h1>
   <header class="header">
-    <div class="wrapper">
+  <div class="wrapper">
 
-      <div class="header__inner">
+    <div class="header__inner">
+      
+      
+      
+      <nav class="menu">
+        
         <a class="logo" href="#">
           <img class="logo__img" src="images/logo.png" alt="logo">
         </a>
-        <nav class="menu">
-
-          <ul class="menu__list">
-
-            <li class="menu__item">
-              <a class="menu__link" href="#">Home +</a>
-            </li>
-
-            <li class="menu__item">
-              <a class="menu__link" href="#">About</a>
-            </li>
-
-            <li class="menu__item">
-              <a class="menu__link" href="#">Services</a>
-            </li>
-
-            <li class="menu__item">
-              <a class="menu__link" href="#">Pages +</a>
-            </li>
-
-            <li class="menu__item">
-              <a class="menu__link" href="#">News</a>
-            </li>
-
-            <li class="menu__item">
-              <a class="menu__link" href="#">Contact</a>
-            </li>
-
-          </ul>
 
 
-          <div class="header__adds">
+        <ul class="menu__list menu__list--active">
+
+          <li class="menu__item">
+            <a class="menu__link" href="#">Home +</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="#">About</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="#">Services</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="#">Pages +</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="#">News</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="#">Contact</a>
+          </li>
+
+        </ul>
 
 
-            <button class="header__search">
-              <svg class="header__svg header__svg--search">
-                <use xlink:href="images/icons/sprite.svg#search"></use>
+        <div class="header__adds">
+
+
+          <button class="header__search">
+            <svg class="header__svg header__svg--search">
+              <use xlink:href="images/icons/sprite.svg#search"></use>
+            </svg>
+          </button>
+
+          <div class="header__items">
+            <a class="header__link" href="#">
+              <svg class="header__svg">
+                <use xlink:href="images/icons/sprite.svg#heart"></use>
               </svg>
-            </button>
+              <span class="header__num">0</span>
+            </a>
 
-            <div class="header__items">
-              <a class="header__link" href="#">
-                <svg class="header__svg">
-                  <use xlink:href="images/icons/sprite.svg#heart"></use>
-                </svg>
-                <span class="header__num">0</span>
-              </a>
-
-              <a class="header__link" href="#">
-                <svg class="header__svg">
-                  <use xlink:href="images/icons/sprite.svg#cart"></use>
-                </svg>
-                <span class="header__num">0</span>
-              </a>
-            </div>
-
-            <button class="header__btn">
-              <svg class="header__svg header__svg--btn">
-                <use xlink:href="images/icons/sprite.svg#menu-btn"></use>
+            <a class="header__link" href="#">
+              <svg class="header__svg">
+                <use xlink:href="images/icons/sprite.svg#cart"></use>
               </svg>
-            </button>
-
+              <span class="header__num">0</span>
+            </a>
           </div>
-        </nav>
 
-      </div>
+          <button class="header__btn">
+            <svg class="header__svg header__svg--btn">
+              <use xlink:href="images/icons/sprite.svg#menu-btn"></use>
+            </svg>
+          </button>
+
+        </div>
+
+        <button class="menu__btn menu__btn--active">
+          <span class="menu__btn-line"></span>
+        </button>
+
+      </nav>
+
+
     </div>
-  </header>
-
-
+  </div>
+</header>
   <main class="main">
+    <h1 class="sr-only">about</h1>
 
-   <div class="breadcrumbs">
-     <h2 class="title breadcrumbs__title">About Us</h2>
+       <div class="breadcrumbs">
+     <h1 class="title breadcrumbs__title">About Us</h1>
      <ul class="breadcrumbs__items">
 
        <li class="breadcrumbs__item">
@@ -101,19 +111,19 @@
        </li>
 
        <li class="breadcrumbs__item">
-         <a class="breadcrumbs__link" href="About Us">
+         <span class="breadcrumbs__link" href="About Us">
            About Us    
-         </a>
+         </span>
        </li>
 
      </ul>
    </div>
-  <section class="about">
+      <section class="about">
 
     <div class="container">
       <div class="about__inner">
         <div class="about__img">
-          <img src="images/about-bg.jpg" alt="">
+          <img class="about__imges" src="images/about-bg.jpg" alt="Working">
         </div>
         <div class="about__exp">
           <div class="about__date">
@@ -124,7 +134,7 @@
               <li class="about__date-item">Working</li>
             </ul>
           </div>
-          <h3 class="about__exp-title">Mission of our creative house</h3>
+          <h2 class="about__exp-title">Mission of our creative house</h2>
           <p class="about__text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
             commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
@@ -182,7 +192,7 @@
 
   </section>
  
-<section class="team">
+    <section class="team">
   <div class="container">
 
     <div class="team__inner">
@@ -201,7 +211,7 @@
         <div class="team__item">
 
           <div class="team__img">
-            <img src="images/team/team-1.jpg" alt="teammate">
+            <img class="team__images" src="images/team/team-1.jpg" alt="teammate">
           </div>
           <div class="team__social">
             <p class="team__name">Eliza Elliot</p>
@@ -256,7 +266,7 @@
 </section>
 
 
-<section class="news">
+    <section class="news">
   
   <div class="container">
     <div class="news__top">
@@ -279,7 +289,7 @@
             veniam</a>
           <div class="news__item">
 
-            <span class="news__date">28 january, 2020</span>
+            <a class="news__date">28 january, 2020</a>
             <a class="news__maker" href="#">by admin</a>
           </div>
         </div>
@@ -298,7 +308,7 @@
             et
             dolore </a>
           <div class="news__item">
-            <span class="news__date">28 january, 2020</span>
+            <a class="news__date">28 january, 2020</a>
             <a class="news__maker" href="#">by admin</a>
           </div>
         </div>
@@ -315,7 +325,7 @@
           <a class="news__title" href="#">Rncididunt ut labore et dolore magna aliqua. Ut enim </a>
 
           <div class="news__item">
-            <span class="news__date">28 january, 2020</span>
+            <a class="news__date">28 january, 2020</a>
             <a class="news__maker" href="#">by admin</a>
           </div>
         </div>
@@ -325,7 +335,7 @@
   </div>
 
 </section>
- <div class="partners ">
+     <div class="partners ">
    <div class="container">
 
      <ul class="partners__inner">
@@ -355,7 +365,8 @@
    </div>
  </div>
 
-</main>
+  </main>
+  
 <!-- ///////////////////////////////////////////////////////// -->
 
 
@@ -468,8 +479,9 @@
 
 
 
-<script src="js/main.min.js"></script>
 
+
+  <script src="js/main.min.js"></script>
 
 </body>
 

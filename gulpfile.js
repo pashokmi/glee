@@ -82,6 +82,7 @@ function scripts() {
     'node_modules/jquery/dist/jquery.js',
     'node_modules/slick-carousel/slick/slick.js',
     'node_modules/mixitup/dist/mixitup.js',
+    'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
     'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
     'app/js/main.js'
   ])
@@ -119,8 +120,8 @@ function watching() {
   watch(['app/html/**/*.html'], html);
   watch(['app/scss/**/*.scss'],styles);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
-  watch('app/**/*.html').on('change',browserSync.reload);
   watch('.app/img/icons/**.svg', svgSprites);
+  watch('app/**/*.html').on('change',browserSync.reload);
 }
 
 
@@ -134,5 +135,5 @@ exports.html = html;
 exports.svgSprite = svgSprite;
 
 
-exports.build = series(cleanDist, images, build);
+exports.build = series(cleanDist, html, svgSprites, images, build);
 exports.default = parallel(styles, scripts, html, svgSprites, browsersync, watching);

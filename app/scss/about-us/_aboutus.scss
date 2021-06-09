@@ -60,7 +60,7 @@
     letter-spacing: -0.3px;
     color: $about;
     padding-bottom: 60px;
-    border-bottom: 3px solid #ebeef3;
+    border-bottom: 3px solid $athensgray;
     margin-bottom: 40px;
     max-height: 250px;
     overflow: auto;
@@ -74,7 +74,7 @@
     padding: 0 25px 0 60px;
     margin-right: 25px;
     position: relative;
-    border-right: 1px solid #ebeef3;
+    border-right: 1px solid $athensgray;
 
     &:last-child {
       border-right: 0;
@@ -125,7 +125,7 @@
   }
 
   &__name {
-    color: #4c4c4c;
+    color: $tundora;
   }
 
   &__stats {

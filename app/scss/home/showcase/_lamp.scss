@@ -7,12 +7,13 @@
 
   &__item {
     position: relative;
-    color: #243f4d;
+    color: $default;
     margin-right: 30px;
     max-width: 870px;
     width: 100%;
-    background-color: #feefe2;
+    background-color: $bgorange;
     padding: 80px 0;
+
     &:last-child {
       margin-right: 0;
     }
@@ -68,14 +69,15 @@
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     font-size: 15px;
-    border: 1px solid #b3b7b5;
-    color: #436372;
+    border: 1px solid $tundora;
+    color: $default;
     padding: 15px 0px 18px 20px;
     border-radius: 5px;
     position: relative;
     display: block;
     max-width: 180px;
     width: 100%;
+
     &::before {
       content: "";
       background-image: url('../images/icon/arrows-bg.svg');
@@ -89,4 +91,48 @@
   }
 
 
+}
+
+@media (max-width: 1700px) {
+  .lamp {
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      margin: 0 auto;
+      margin-bottom: 150px;
+    }
+  }
+}
+
+@media (max-width: 968px) {
+  .lamp {
+    &__inner {
+      padding: 30px;
+    }
+
+    &__item {
+      padding-bottom: 20px;
+    }
+
+    &__item-second {
+      .lamp__inner {
+        padding: 30px;
+      }
+    }
+
+    &__img {
+      left: 75%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .lamp {
+    &__inner {
+      max-width: 300px;
+    }
+  }
 }
