@@ -204,3 +204,15 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .footer {
+    &__copyright {
+      flex-wrap: wrap;
+    }
+    &__copy{
+      order: 1;
+min-width: 300px;
+    }
+  }
+}

@@ -35,6 +35,7 @@
     max-width: 370px;
     position: relative;
     margin-right: 30px;
+
     &:nth-child(3n+3) {
       margin-right: 0;
     }
@@ -96,6 +97,7 @@
     margin-right: 30px;
     position: relative;
     cursor: pointer;
+
     &::before {
       content: "";
       position: absolute;
@@ -112,6 +114,7 @@
   &__maker {
     position: relative;
     padding-left: 30px;
+
     &::before {
       content: "";
       position: absolute;
@@ -124,4 +127,50 @@
     }
   }
 
+}
+
+@media (max-width: 1240px) {
+  .news {
+    &__inner {
+      justify-content: center;
+
+    }
+  }
+}
+
+@media (max-width: 968px) {
+  .news {
+    &__card {
+      width: 100%;
+      max-width: 450px;
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 564px) {
+  .news {
+    &__top {
+      flex-wrap: wrap;
+    }
+
+    &__card {
+      max-width: 300px;
+      margin-bottom: 25px;
+    }
+
+    &__link {
+      top: -10px;
+      left: -5px;
+
+    }
+
+    &__date {
+      width: 100%;
+      display: block;
+    }
+  }
+  .title{
+    line-height: 42px;
+  }
 }

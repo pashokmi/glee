@@ -32,6 +32,7 @@
 
     .lamp__text {
       margin-bottom: 26px;
+      padding: 0 5px;
     }
   }
 
@@ -109,12 +110,17 @@
 
 @media (max-width: 968px) {
   .lamp {
+    &__items{
+      margin-bottom: 50px;
+    }
     &__inner {
       padding: 30px;
     }
 
     &__item {
       padding-bottom: 20px;
+      max-width: 550px;
+      margin-bottom: 50px;
     }
 
     &__item-second {
@@ -132,6 +138,27 @@
 @media (max-width: 768px) {
   .lamp {
     &__inner {
+      max-width: 300px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .lamp {
+
+
+    &__item {
+      padding-top: 200px;
+      margin-bottom: 50px;
+    }
+
+    &__img {
+      left: 50%;
+      top: 23%;
+      height: 200px;
+    }
+
+    &__text{
       max-width: 300px;
     }
   }
