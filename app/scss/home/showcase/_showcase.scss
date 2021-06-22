@@ -91,6 +91,8 @@
 
     img {
       margin: auto;
+      height: 370px;
+      object-fit: scale-down;
     }
   }
 
@@ -175,6 +177,7 @@
 @media (max-width: 950px) {
   .showcase {
     margin-bottom: 50px;
+
     &__content {
       max-width: 610px;
 
